@@ -85,6 +85,32 @@ $light-grey: #F3F4F4;
   font-weight: 400;
   line-height: normal;
   border-radius: 10rem;
-border: 1px solid  $black;
-background-color: $white;
+  border: 1px solid  $black;
+  background-color: $white;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.6rem;
+  height: 5.6rem;
+  background-color: $black;
+  border-radius: 50%;
+  & img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+}
+
+//forms
+
+input {
+  &::placeholder {
+    font-family: 'Inter';
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 140%;
+    color: $grey;
+  }
 }
