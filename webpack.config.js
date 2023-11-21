@@ -13,6 +13,8 @@ const devtool = devMode ? "source-map" : undefined;
 
 const entryPoints = {
   index: path.resolve(__dirname, "src", "index.js"),
+  payment: path.resolve(__dirname, "src", "index.js"),
+
   // Добавьте другие страницы здесь
 };
 
@@ -89,11 +91,11 @@ module.exports = {
 
   plugins: [
     new CleanWebpackPlugin(),
-    // new HtmlWebpackPlugin({
-    //   template: "src/index.html", // Путь к вашему главному HTML файлу
-    //   chunks: "all", // Укажите, какой бандл связать с каждой страницей
-    //   cache: false,
-    // }),
+    new HtmlWebpackPlugin({
+      template: "src/index.html", // Путь к вашему главному HTML файлу
+      chunks: "all", // Укажите, какой бандл связать с каждой страницей
+      cache: false,
+    }),
     ...htmlPlugins,
     new MiniCssExtractPlugin({
       filename: "[name].css",
