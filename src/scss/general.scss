@@ -1,0 +1,64 @@
+//colors
+$white: #ffffff;
+$black: #1C1C1C;
+$red: #E33C18;
+$grey: #BDBDBD;
+$light-grey: #F3F4F4;
+
+//text
+.title {
+  font-family: 'Unbounded';
+  font-size: 4.6rem;
+  font-weight: 400;
+  line-height: normal;
+  color: $black;
+}
+
+.title-sm {
+  font-family: 'Unbounded';
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: normal;
+  color: $black;
+}
+
+.text {
+  font-family: 'Inter';
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 130%;
+  color: $black;
+}
+
+.text-sm {
+  font-family: 'Inter';
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: $black;
+}
+
+//buttons
+
+.button {
+  display: flex;
+  align-items: center;
+  padding: 1.9rem 4rem;
+  background-color: $black;
+  color: $white;
+  border-radius: 50%;
+  font-family: 'Inter';
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  gap: 1.6rem;
+}
+
+.btn {
+  font-family: 'Inter';
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  color: $black;
+}
