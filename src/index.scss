@@ -1,6 +1,8 @@
 @import "./scss/fonts";
-@import './libs/normalize';
+@import './scss/libs/normalize';
 @import "./scss/libs/_set";
 @import "./scss/general";
 
 @import "./scss/components/header";
+@import "./scss/components/payment";
+@import "./scss/components/delivery";

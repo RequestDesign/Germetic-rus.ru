@@ -22,6 +22,7 @@ $light-grey: #F3F4F4;
   color: $black;
 }
 
+
 .text {
   font-family: 'Inter';
   font-size: 2rem;
@@ -40,7 +41,7 @@ $light-grey: #F3F4F4;
 
 //buttons
 
-.button {
+.button--circle {
   display: flex;
   align-items: center;
   padding: 1.9rem 4rem;
@@ -53,6 +54,20 @@ $light-grey: #F3F4F4;
   line-height: normal;
   gap: 1.6rem;
 }
+.button {
+  display: flex;
+  align-items: center;
+  background-color: $black;
+  color: $white;
+  font-family: 'Inter';
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  gap: 0.8rem;
+  border: 1px solid  $black;
+  border-radius: 100px;
+  width: fit-content;
+}
 
 .btn {
   font-family: 'Inter';
@@ -61,4 +76,15 @@ $light-grey: #F3F4F4;
   line-height: normal;
   text-transform: uppercase;
   color: $black;
+}
+
+.btn--white {
+  font-family: 'Inter';
+  color: $black;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10rem;
+border: 1px solid  $black;
+background-color: $white;
 }
