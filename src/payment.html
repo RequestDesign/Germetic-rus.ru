@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оплата и доставка</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=ffac2b37-9f44-43d8-8e3e-92f15073c2d1"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <include src="./components/header.html"></include>
@@ -192,16 +196,45 @@
                 </li>
               </ul>
               <a href="#" class="delivery__content-btn button">
-                <div class="delivery__content-btn-img-box"> <img class="delivery__content-btn-img" src="./assets/images/icons/DownloadSimple.svg" alt=""></div>
+                <div class="delivery__content-btn-img-box">
+                  <img
+                    class="delivery__content-btn-img"
+                    src="./assets/images/icons/DownloadSimple.svg"
+                    alt=""
+                  />
+                </div>
                 Скачать схему проезда
               </a>
             </div>
-            <div
-              class="delivery__content-block delivery__content-block--map"
-            ></div>
+            <div class="delivery__content-block delivery__content-block--map">
+              <div id="map" class="shops__map"></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      function init() {
+        let map = new ymaps.Map("map", {
+          center: [55.84961325330386,37.67721883135223],
+          zoom: 17,
+        });
+
+        map.controls.remove("geolocationControl"); // удаляем геолокацию
+      map.controls.remove("searchControl"); // удаляем поиск
+      map.controls.remove("trafficControl"); // удаляем контроль трафика
+      map.controls.remove("typeSelector"); // удаляем тип
+      map.controls.remove("fullscreenControl"); // удаляем кнопку перехода в полноэкранный режим
+      map.controls.remove("zoomControl"); // удаляем контрол зуммирования
+      map.controls.remove("rulerControl"); // удаляем контрол правил
+      map.behaviors.disable(["scrollZoom"]); // отключаем скролл карты (опционально)
+
+      
+      }
+ 
+
+      ymaps.ready(init);
+    </script>
   </body>
 </html>
