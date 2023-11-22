@@ -13,36 +13,46 @@
           <h2 class="payment__title title">Способы оплаты</h2>
           <ul class="payment__list">
             <li class="payment__item">
-              <div class="payment__item-inner">
-                <p class="payment__text text-sm">Безналичная оплата по счету</p>
-              </div>
-            </li>
-            <li class="payment__item">
-              <div class="payment__item-inner">
-                <p class="payment__text text-sm">
-                  Оплата картой через Сбербанк онлайн
-                </p>
-              </div>
-            </li>
-            <li class="payment__item">
-              <div class="payment__item-inner">
-                <p class="payment__text text-sm">
-                  Оплата картой в офисе компании
-                </p>
-              </div>
-            </li>
-            <li class="payment__item">
-              <div class="payment__item-inner">
-                <p class="payment__text text-sm">
-                  Оплата наличными в офисе компании
-                </p>
-              </div>
-            </li>
-            <li class="payment__item">
-              <a href="#" class="payment__item--link">
+              <div class="payment__item-wrapper">
                 <div class="payment__item-inner">
                   <p class="payment__text text-sm">
-                    Заказать счет <br>на оплату info@germetic-rus.ru
+                    Безналичная оплата по счету
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="payment__item">
+              <div class="payment__item-wrapper">
+                <div class="payment__item-inner">
+                  <p class="payment__text text-sm">
+                    Оплата картой через Сбербанк онлайн
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="payment__item">
+              <div class="payment__item-wrapper">
+                <div class="payment__item-inner">
+                  <p class="payment__text text-sm">
+                    Оплата картой в офисе компании
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="payment__item">
+              <div class="payment__item-wrapper">
+                <div class="payment__item-inner">
+                  <p class="payment__text text-sm">
+                    Оплата наличными в офисе компании
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="payment__item">
+              <a href="#" class="payment__item-wrapper payment__item--link">
+                <div class="payment__item-inner">
+                  <p class="payment__text text-sm">
+                    Заказать счет <br />на оплату info@germetic-rus.ru
                   </p>
                 </div>
               </a>
@@ -63,14 +73,16 @@
                 <br />
                 по РОССИИ
               </h4>
-              <div class="delivery__content-text-block"><p class="delivery__content-text text-sm">
-                По условиям доставки обращайтесь к нашим менеджерам.
-              </p>
-              <p class="delivery__content-text text-sm">
-                Доставка продукции производится через транспортные компании
-                Байкал-Сервис, Деловые линии
-              </p></div>
-              
+              <div class="delivery__content-text-block">
+                <p class="delivery__content-text text-sm">
+                  По условиям доставки обращайтесь к нашим менеджерам.
+                </p>
+                <p class="delivery__content-text text-sm">
+                  Доставка продукции производится через транспортные компании
+                  Байкал-Сервис, Деловые линии
+                </p>
+              </div>
+
               <p
                 class="delivery__content-text delivery__content-text--tel text-sm"
               >
@@ -78,16 +90,26 @@
               </p>
               <div class="delivery__content-companies">
                 <div class="delivery__content-company">
-                  <div class="delivery__content-company-img-box delivery__content-company-img-box--baikal">
-                    <img src="./assets/images/icons/company_1.svg" alt="Байкал-Сервис">
+                  <div
+                    class="delivery__content-company-img-box delivery__content-company-img-box--baikal"
+                  >
+                    <img
+                      src="./assets/images/icons/company_1.svg"
+                      alt="Байкал-Сервис"
+                    />
                   </div>
                   <p class="delivery__content-company-title text-sm">
                     Байкал-Сервис
                   </p>
                 </div>
                 <div class="delivery__content-company">
-                  <div class="delivery__content-company-img-box delivery__content-company-img-box--line">
-                    <img src="./assets/images/icons/company_2.svg" alt=" Деловые линии">
+                  <div
+                    class="delivery__content-company-img-box delivery__content-company-img-box--line"
+                  >
+                    <img
+                      src="./assets/images/icons/company_2.svg"
+                      alt=" Деловые линии"
+                    />
                   </div>
                   <p class="delivery__content-company-title text-sm">
                     Деловые линии
@@ -103,22 +125,29 @@
               </h4>
 
               <ul class="delivery__content-list">
-                <li  class="delivery__content-item">
-                  <p class="delivery__content-text text-sm">   Стоимость доставки от 500 руб. может изменяться в зависимости
-                    от расстояния и объема поставки.</p>
-               
+                <li class="delivery__content-item">
+                  <p class="delivery__content-text text-sm">
+                    Стоимость доставки от 500 руб. может изменяться в
+                    зависимости от расстояния и объема поставки.
+                  </p>
                 </li>
-                <li class="delivery__content-item"> <p class="delivery__content-text text-sm">     Окончательная стоимость оговаривается с менеджером после
-                  обработки заказа.</p>
-             
+                <li class="delivery__content-item">
+                  <p class="delivery__content-text text-sm">
+                    Окончательная стоимость оговаривается с менеджером после
+                    обработки заказа.
+                  </p>
                 </li>
-                <li class="delivery__content-item"> <p class="delivery__content-text text-sm">   Доставка по Москве и МО осуществляется с понедельника по
-                  субботу с 09:00 до 20:00.</p>
-               
+                <li class="delivery__content-item">
+                  <p class="delivery__content-text text-sm">
+                    Доставка по Москве и МО осуществляется с понедельника по
+                    субботу с 09:00 до 20:00.
+                  </p>
                 </li>
-                <li class="delivery__content-item"> <p class="delivery__content-text text-sm">  Возможность быстрой доставки в день оформления заказа
-                  уточняйте у наших менеджеров.</p>
-                
+                <li class="delivery__content-item">
+                  <p class="delivery__content-text text-sm">
+                    Возможность быстрой доставки в день оформления заказа
+                    уточняйте у наших менеджеров.
+                  </p>
                 </li>
               </ul>
 
@@ -134,13 +163,17 @@
                 >info@germetic-rus.ru</a
               >
             </div>
-            <div class="delivery__content-block delivery__content-block--pickup">
+            <div
+              class="delivery__content-block delivery__content-block--pickup"
+            >
               <h4 class="delivery__content-title">
                 Самовывоз заказа по адресу:
               </h4>
               <ul class="delivery__content-adress-list">
                 <li class="delivery__content-adress-item">
-                  <p class="delivery__content-text text-sm delivery__content-text--red">
+                  <p
+                    class="delivery__content-text text-sm delivery__content-text--red"
+                  >
                     Адрес: г. Москва ул. Красная сосна, 2, корп. 1, стр. 1, оф.
                     555, МОСТРАНССКЛАД
                   </p>
@@ -152,23 +185,20 @@
                   </p>
                 </li>
                 <li class="delivery__content-adress-item">
-                  <p
-                    class="delivery__content-text text-sm"
-                  >
-                    Телефон:
-                  </p>
-                  <p
-                    class="delivery__content-text  text-sm"
-                  >
+                  <p class="delivery__content-text text-sm">Телефон:</p>
+                  <p class="delivery__content-text text-sm">
                     8 (495) 120-23-29, 8 (985) 765-30-21
                   </p>
                 </li>
               </ul>
               <a href="#" class="delivery__content-btn button">
+                <div class="delivery__content-btn-img-box"> <img class="delivery__content-btn-img" src="./assets/images/icons/DownloadSimple.svg" alt=""></div>
                 Скачать схему проезда
               </a>
             </div>
-            <div class="delivery__content-block delivery__content-block--map"></div>
+            <div
+              class="delivery__content-block delivery__content-block--map"
+            ></div>
           </div>
         </div>
       </div>
