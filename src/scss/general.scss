@@ -106,6 +106,17 @@ $light-grey: #F3F4F4;
   font-size: 1.6rem;
 }
 
+.btn-swiper {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 [class*="copyrights-pane"] {
   display: none;
 }

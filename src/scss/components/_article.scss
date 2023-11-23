@@ -48,13 +48,7 @@
   // .article__social-link
 
   &__social-link {
-    width: 5.6rem;
-    height: 5.6rem;
-    border-radius: 50%;
-    border: 1px solid #cdcdcd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
   }
 
   // .article__social-svg-box
@@ -331,9 +325,8 @@
     // .article__content
 
     &__content-inner {
-      display: flex;
-      gap: 15rem;
-      padding: 8rem 0;
+      gap: 0;
+      padding: 9.6rem 0 20rem;
     }
 
     // .article__article
@@ -346,13 +339,7 @@
     // .article__desk
 
     &__desk {
-      &::first-letter {
-        font-family: "Unbounded";
-        font-size: 3.8rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-      }
+
     }
 
     // .article__point
@@ -372,75 +359,65 @@
     // .article__img-block
 
     &__img-block {
-      margin: 2.4rem 0 ;
-      display: flex;
+      margin: 3.2rem 0 ;
       flex-direction: column;
-      gap: 2.4rem;
+      gap: 3.2rem;
     }
 
     // .article__img-box
 
     &__img-box {
-      flex-basis: 47.8rem;
-      height: 34rem;
+      flex-basis: 36rem;
+      height: 36rem;
 
       & img {
-        object-fit: contain;
+        object-fit: cover;
+        height: 36rem;
       }
       &--hidden {
-        display: none;
+        display: block;
       }
     }
 
     // .article__text-box
 
     &__text-box {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      gap: 1.5rem;
+      gap: 3.2rem;
 
       &--short {
-        max-width: 40rem;
+        max-width: none;
       }
     }
 
     // .article__list-wrapper
 
     &__list-wrapper {
-      margin: 2.4rem 0;
+      margin: 3.2rem 0;
+    
     }
 
     // .article__list-title
 
     &__list-title {
-      margin-bottom: 1.6rem;
+        margin-top: 3.2rem;
+        margin-bottom: 2.6rem;
+        font-size: 4rem;
     }
 
     // .article__list
 
     &__list {
-      display: flex;
-      flex-direction: column;
-      gap: 1.2rem;
+      gap: 1.6rem;
     }
 
     // .article__item
 
     &__item {
-      padding-left: 1.4rem;
-      position: relative;
-      display: flex;
-      align-items: center;
+      padding-left: 2.8rem;
       &:before {
-        position: absolute;
-        content: "";
-        width: 0.6rem;
-        height: 0.6rem;
-        border-radius: 50%;
-        background-color: $black;
-        left: 0;
-        top: 0.9rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        top: 1.8rem;
       }
     }
 
