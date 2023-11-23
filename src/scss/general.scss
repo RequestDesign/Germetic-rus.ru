@@ -1,13 +1,17 @@
 //colors
 $white: #ffffff;
-$black: #1C1C1C;
-$red: #E33C18;
-$grey: #BDBDBD;
-$light-grey: #F3F4F4;
+$black: #1c1c1c;
+$red: #e33c18;
+$grey: #bdbdbd;
+$light-grey: #f3f4f4;
+
+// * {
+//   outline:1px solid #E33C18;
+// }
 
 //text
 .title {
-  font-family: 'Unbounded';
+  font-family: "Unbounded";
   font-size: 4.6rem;
   font-weight: 400;
   line-height: normal;
@@ -15,16 +19,24 @@ $light-grey: #F3F4F4;
 }
 
 .title-sm {
-  font-family: 'Unbounded';
+  font-family: "Unbounded";
   font-size: 3.8rem;
   font-weight: 400;
   line-height: normal;
   color: $black;
 }
 
+.title-s {
+  font-family: "Inter";
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: normal;
+  color: $black;
+  letter-spacing: 0.48px;
+}
 
 .text {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 2rem;
   font-weight: 400;
   line-height: 130%;
@@ -32,7 +44,7 @@ $light-grey: #F3F4F4;
 }
 
 .text-sm {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 140%;
@@ -48,7 +60,7 @@ $light-grey: #F3F4F4;
   background-color: $black;
   color: $white;
   border-radius: 50%;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 400;
   line-height: normal;
@@ -59,18 +71,18 @@ $light-grey: #F3F4F4;
   align-items: center;
   background-color: $black;
   color: $white;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 400;
   line-height: normal;
   gap: 0.8rem;
-  border: 1px solid  $black;
+  border: 1px solid $black;
   border-radius: 100px;
   width: fit-content;
 }
 
 .btn {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 1.4rem;
   font-weight: 500;
   line-height: normal;
@@ -79,12 +91,57 @@ $light-grey: #F3F4F4;
 }
 
 .btn--white {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: $black;
-  font-size: 1.6rem;
   font-weight: 400;
   line-height: normal;
   border-radius: 10rem;
-border: 1px solid  $black;
-background-color: $white;
+  border: 1px solid $black;
+  background-color: $white;
+  font-size: 1.6rem;
+}
+
+.btn-swiper {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0 0 10px 0 $grey;
+  }
+}
+
+.button__arr {
+  padding: 1.8rem 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  &-svg-box {
+    width: 1.6rem;
+    height: 1.2rem;
+    & svg {
+      object-fit: contain;
+    }
+  }
+}
+
+[class*="copyrights-pane"] {
+  display: none;
+}
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+@media (max-width: 48em) {
+  .title {
+    font-size: 5.2rem;
+  }
+
+  .text-sm {
+    font-size: 2.8rem;
+  }
 }
