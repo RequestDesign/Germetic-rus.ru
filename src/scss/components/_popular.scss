@@ -1,5 +1,5 @@
 .popular {
-  padding: 8rem 0 16.2rem;
+  padding: 8rem 0;
   // .popular__content-inner
 
   &__content-inner {
@@ -19,23 +19,13 @@
   &__title {
   }
 
-  // .popular__swiper-btn-box
-
-  &__swiper-btn-box {
-    position: relative;
-    width: 12rem;
-    height: 5.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.8rem;
+  &__header-btn {
+    display: none;
   }
-
   // .popular__swiper-button-prev
 
   &__swiper-button-prev.swiper-button-prev,
   &__swiper-button-next.swiper-button-next {
-    position: static;
     width: 5.6rem;
     height: 5.6rem;
     margin-top: 0;
@@ -43,29 +33,34 @@
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
+    top: -10.6rem;
     &::after {
       content: "";
     }
     & img {
-        width: 2.4rem;
-        height: 1.5rem;
-        object-fit: contain;
+      width: 2.4rem;
+      height: 1.5rem;
+      object-fit: contain;
     }
-
-
   }
 
-  &__swiper-button-prev {
+  &__swiper-button-prev.swiper-button-prev {
+    left: calc(100% - 12rem);
   }
 
   // .popular__swiper-button-next
 
-  &__swiper-button-next {
+  &__swiper-button-next.swiper-button-next {
+    right: 0;
   }
 
   // .popular__swiper
 
   &__swiper {
+  }
+
+  &__swiper-box {
+    position: relative;
   }
 
   // .popular__swiper-wrapper
@@ -108,12 +103,11 @@
         width: 24rem;
         height: 24rem;
         & img {
-            width: 24rem;
-            height: 24rem;
+          width: 24rem;
+          height: 24rem;
         }
       }
     }
-
   }
 
   // .popular__card-img-box
@@ -224,26 +218,54 @@
     gap: 1.5rem;
 
     &:hover {
-        box-shadow: 0 0 10px 0 $black;
-      }
-
-
+      box-shadow: 0 0 10px 0 $black;
+    }
   }
 
   //.popular__card-btn
 
   &__card-btn-svg-box {
-
     & svg {
-        width: 2.4rem;
-        height: 2.4rem;
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}
+
+.main--main-page {
+  // .popular__swiper-button-prev
+
+  .popular__swiper-button-prev.swiper-button-prev,
+  .popular__swiper-button-next.swiper-button-next {
+    top: 50%;
+
+    &.swiper-button-disabled {
+      opacity: 0;
     }
   }
 
+  .popular__swiper-button-prev {
+    left: -2.8rem;
+  }
+  // .popular__swiper-button-next
+
+  .popular__swiper-button-next {
+    right: -2.8rem;
+  }
+
+  .popular__header-btn {
+    display: flex;
+  }
+}
+
+.main--article {
+  .popular {
+    padding: 8rem 0 16rem;
+  }
 }
 
 @media (max-width: 48em) {
-  .popular {
+  .main--article .popular {
     display: none;
   }
 }

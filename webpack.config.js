@@ -17,6 +17,7 @@ const entryPoints = {
   index: path.resolve(__dirname, "src", "index.js"),
   payment: path.resolve(__dirname, "src", "index.js"),
   article: path.resolve(__dirname, "src", "index.js"),
+  main: path.resolve(__dirname, "src", "index.js"),
 
 };
 
