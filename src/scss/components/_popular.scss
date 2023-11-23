@@ -51,6 +51,8 @@
         height: 1.5rem;
         object-fit: contain;
     }
+
+
   }
 
   &__swiper-button-prev {
@@ -99,19 +101,19 @@
 
       // .popular__article-btn
 
-      & .popular__article-btn {
-        margin-bottom: 2.4rem;
+      & .popular__card-btn {
         margin-top: 0;
       }
       & .popular__card-img-box {
         width: 24rem;
         height: 24rem;
         & img {
-          width: 24rem;
-          height: 24rem;
+            width: 24rem;
+            height: 24rem;
         }
       }
     }
+
   }
 
   // .popular__card-img-box
@@ -206,11 +208,12 @@
   &__card-price {
   }
 
-  // .popular__article-btn
+  // .popular__card-btn
 
-  &__article-btn {
+  &__card-btn {
     transition: all 0.3s;
     margin-top: 1rem;
+    margin-bottom: 2.4rem;
     display: block;
     width: 100%;
     padding: 1.8rem 3.2rem;
@@ -220,11 +223,16 @@
     justify-content: center;
     gap: 1.5rem;
 
+    &:hover {
+        box-shadow: 0 0 10px 0 $black;
+      }
+
+
   }
 
-  //.popular__article-btn
+  //.popular__card-btn
 
-  &__article-btn-svg-box {
+  &__card-btn-svg-box {
 
     & svg {
         width: 2.4rem;
