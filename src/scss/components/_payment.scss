@@ -50,10 +50,14 @@
         line-height: 100%;
     }
 
-    // .payment__item--btn
+    // .payment__item--link
 
-    &__item--btn {
-     
+    &__item--link {
+     transition: all 0.3s;
+
+     &:hover {
+        transform: scale(1.05);
+     }
     }
 }
 
