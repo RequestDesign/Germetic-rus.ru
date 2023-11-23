@@ -1,4 +1,4 @@
-const map_delivery = () => {
+const mapDelivery = () => {
 
       function init() {
         let map = new ymaps.Map("map", {
@@ -33,4 +33,4 @@ const map_delivery = () => {
 
 }
 
-export default map_delivery
+export default mapDelivery
