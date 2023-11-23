@@ -1,0 +1,46 @@
+.price-list {
+padding: 8rem 0;
+    // .price-list__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        padding: 5.6rem 5.6rem 12.6rem;
+        background: url(./assets/images/price_list_main_bg.webp) no-repeat top/cover;
+    }
+
+    // .price-list__desk
+
+    &__desk {
+        font-family: 'Inter';
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+    }
+
+    // .price-list__header-box
+
+    &__header-box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .price-list__title
+
+    &__title {
+    }
+
+    // .price-list__button
+
+    &__button {
+    }
+
+    // .price-list__button-svg-box
+
+    &__button-svg-box {
+    }
+}
