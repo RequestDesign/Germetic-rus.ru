@@ -10,50 +10,265 @@
     <include src="./components/header.html"></include>
 
     <main class="main main--main-page">
-        <section class="characteristics">
-            <div class="container">
-                <ul class="characteristics__list">
-                    <li class="characteristics__item">
-                        <h4 class="characteristics__item-title title-sm">Проверенное качество</h4>
-                        <div class="characteristics__item-desk-box">
-                            <p class="characteristics__item-desk text-sm">Производство с 2008 года</p>
-                            <div class="characteristics__item-svg-box ">
-                                <!-- <img src="./assets/images/icons/snowflake.svg" alt="Морозостойкие материалы"> -->
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li class="characteristics__item">
-                        <h4 class="characteristics__item-title title-sm">Цветные герметики </h4>
-                        <div class="characteristics__item-desk-box">
-                            <p class="characteristics__item-desk text-sm">колеруем в любой цвет RAL</p>
-                            <div class="characteristics__item-svg-box characteristics__item-svg-box--ral">
-                                <img src="./assets/images/icons/ral.svg" alt="Морозостойкие материалы">
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="characteristics__item characteristics__item--snowflake">
-                        <h4 class="characteristics__item-title title-sm">Морозостойкие материалы </h4>
-                        <div class="characteristics__item-desk-box">
-                            <p class="characteristics__item-desk text-sm">все наши герметики изготовлены для применения в условиях климата России</p>
-                            <div class="characteristics__item-svg-box characteristics__item-svg-box--snowflake">
-                                <img src="./assets/images/icons/snowflake.svg" alt="Морозостойкие материалы">
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <p class="hero__title title">
+                Профессиональные герметики «Рустил»
+              </p>
+              <p class="hero__subtitle text">Сделано в России</p>
+              <div class="hero__swiper-button-box">
+              <div
+              class="swiper-button-prev hero__swiper-button-prev btn-swiper"
+            ></div>
+            <div
+              class="swiper-button-next hero__swiper-button-next btn-swiper"
+            ></div>
+          </div>
             </div>
-        </section>
+
+            <div class="hero__swiper-box">
+              <div class="hero__swiper swiper">
+                <div class="hero__swiper-wrapper swiper-wrapper">
+                  <div class="hero__swiper-slide swiper-slide">
+                    <div class="hero__card-img-box">
+                      <img src="./assets/images/hero_swiper.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="hero__swiper-slide swiper-slide">
+                    <div class="hero__card-img-box">
+                      <img src="./assets/images/hero_swiper.webp" alt="" />
+                    </div>
+                  </div>
+                  <div class="hero__swiper-slide swiper-slide">
+                    <div class="hero__card-img-box">
+                      <img src="./assets/images/hero_swiper.webp" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="hero__swiper-pagination swiper-pagination"></div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="characteristics">
+        <div class="container">
+          <ul class="characteristics__list">
+            <li class="characteristics__item">
+              <p class="characteristics__item-title title-sm">
+                Проверенное качество
+              </p>
+              <div class="characteristics__item-desk-box">
+                <p class="characteristics__item-desk text-sm">
+                  Производство с 2008 года
+                </p>
+                <a
+                  href="about_company.html"
+                  class="characteristics__link button--circle"
+                >
+                  <div class="characteristics__link-svg-box">
+                    <img
+                      src="./assets/images/icons/arr_right_white.svg"
+                      alt="стрелка вправо"
+                    />
+                  </div>
+                </a>
+              </div>
+            </li>
+
+            <li class="characteristics__item">
+              <p class="characteristics__item-title title-sm">
+                Цветные герметики
+              </p>
+              <div class="characteristics__item-desk-box">
+                <p class="characteristics__item-desk text-sm">
+                  колеруем в любой цвет RAL
+                </p>
+                <div
+                  class="characteristics__item-svg-box characteristics__item-svg-box--ral"
+                >
+                  <img
+                    src="./assets/images/icons/ral.svg"
+                    alt="Морозостойкие материалы"
+                  />
+                </div>
+              </div>
+            </li>
+
+            <li class="characteristics__item characteristics__item--snowflake">
+              <p class="characteristics__item-title title-sm">
+                Морозостойкие материалы
+              </p>
+              <div class="characteristics__item-desk-box">
+                <p class="characteristics__item-desk text-sm">
+                  все наши герметики изготовлены для применения в условиях
+                  климата России
+                </p>
+                <div
+                  class="characteristics__item-svg-box characteristics__item-svg-box--snowflake"
+                >
+                  <img
+                    src="./assets/images/icons/snowflake.svg"
+                    alt="Морозостойкие материалы"
+                  />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="popular-categories">
+        <div class="container">
+          <div class="popular-categories__content-inner">
+            <div class="popular-categories__header">
+              <p class="popular-categories__title title">
+                Популярные категории
+              </p>
+              <a
+                href="#"
+                class="popular-categories__header-btn button button__arr"
+                >В каталог
+                <div
+                  class="popular-categories__button-svg-box button__arr-svg-box"
+                >
+                  <img
+                    src="./assets/images/icons/arr_right_white.svg"
+                    alt="стрелка вправо"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="popular-categories__swiper-box">
+              <div class="popular-categories__swiper swiper">
+                <div class="popular-categories__swiper-wrapper swiper-wrapper">
+                  <div class="popular-categories__swiper-slide swiper-slide">
+                    <a href="#" class="popular-categories__card-link">
+                      <div class="popular-categories__card">
+                        <div class="popular-categories__card-img-box">
+                          <img
+                            src="./assets/images/popular_categories_1.webp"
+                            alt=""
+                          />
+                        </div>
+                        <div class="popular-categories__card-content">
+                          <p class="popular-categories__card-title title-s">
+                            Акриловые герметики
+                          </p>
+                          <p class="popular-categories__card-desk text-sm">
+                            Сопротивление механической деформации
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="popular-categories__swiper-slide swiper-slide">
+                    <a href="#" class="popular-categories__card-link">
+                      <div class="popular-categories__card">
+                        <div class="popular-categories__card-img-box">
+                          <img
+                            src="./assets/images/popular_categories_2.webp"
+                            alt="   Акриловые герметики"
+                          />
+                        </div>
+                        <div class="popular-categories__card-content">
+                          <p class="popular-categories__card-title title-s">
+                            Полиуретановые герметики
+                          </p>
+                          <p class="popular-categories__card-desk text-sm">
+                            Хорошие адгезивные качества
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="popular-categories__swiper-slide swiper-slide">
+                    <a href="#" class="popular-categories__card-link">
+                      <div class="popular-categories__card">
+                        <div class="popular-categories__card-img-box">
+                          <img
+                            src="./assets/images/popular_categories_1.webp"
+                            alt="       Полиуретановые герметики"
+                          />
+                        </div>
+                        <div class="popular-categories__card-content">
+                          <p class="popular-categories__card-title title-s">
+                            Цветные герметики
+                          </p>
+                          <p class="popular-categories__card-desk text-sm">
+                            Устойчивость к неблагоприятным погодным условиям, УФ
+                            лучам
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="popular-categories__swiper-slide swiper-slide">
+                    <a href="#" class="popular-categories__card-link">
+                      <div class="popular-categories__card">
+                        <div class="popular-categories__card-img-box">
+                          <img
+                            src="./assets/images/popular_categories_2.webp"
+                            alt="Клей-герметики"
+                          />
+                        </div>
+                        <div class="popular-categories__card-content">
+                          <p class="popular-categories__card-title title-s">
+                            Клей-герметики
+                          </p>
+                          <p class="popular-categories__card-desk text-sm">
+                            Сопротивление механической деформации
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="popular-categories__swiper-slide swiper-slide">
+                    <a href="#" class="popular-categories__card-link">
+                      <div class="popular-categories__card">
+                        <div class="popular-categories__card-img-box">
+                          <img
+                            src="./assets/images/popular_categories_1.webp"
+                            alt="Цветные герметики"
+                          />
+                        </div>
+                        <div class="popular-categories__card-content">
+                          <p class="popular-categories__card-title title-s">
+                            Цветные герметики
+                          </p>
+                          <p class="popular-categories__card-desk text-sm">
+                            Устойчивость к неблагоприятным погодным условиям, УФ
+                            лучам
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="swiper-button-prev popular-categories__swiper-button-prev btn-swiper"
+              ></div>
+              <div
+                class="swiper-button-next popular-categories__swiper-button-next btn-swiper"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="price-list">
         <div class="container">
           <div class="price-list__inner">
             <p class="price-list__desk">Прайс-лист</p>
             <div class="price-list__header-box">
-              <h2 class="price-list__title title-sm">
+              <p class="price-list__title title-sm">
                 Прямая продажа от производителя
-              </h2>
+              </p>
               <a href="#" class="price-list__button button button__arr"
                 >Открыть прайс-лист
                 <div class="price-list__button-svg-box button__arr-svg-box">
@@ -68,7 +283,11 @@
         </div>
       </section>
 
-      <include src="./components/popular.html"></include>
+      <include src="./components/popular_goods.html"></include>
+
+      <include src="./components/form.html"></include>
+
+      <include src="./components/trust_us.html"></include>
     </main>
   </body>
 </html>

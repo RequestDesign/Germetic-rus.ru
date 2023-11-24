@@ -44,7 +44,13 @@
 
     // .characteristics__item-svg-box
 
-    &__item-svg-box {
+    &__link-svg-box {
+        width: 2rem;
+        height:  1.5rem;
+    }
+
+    &__item-svg-box,
+    &__link-svg-box {
         & img {
             object-fit: contain;
         }
