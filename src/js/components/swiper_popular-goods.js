@@ -3,16 +3,16 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 
-const swiperArticle = () => {
-    const swiperOne = new Swiper('.popular__swiper', {
+const swiperPopularGoods = () => {
+    const swiperOne = new Swiper('.popular-goods__swiper', {
         slidesPerView: '4',
         spaceBetween: 20,
         grabCursor: true,
         updateOnWindowResize: true,
         watchSlidesProgress: true,
         navigation: {
-            nextEl: '.popular__swiper-button-next',
-            prevEl: '.popular__swiper-button-prev',
+            nextEl: '.popular-goods__swiper-button-next',
+            prevEl: '.popular-goods__swiper-button-prev',
         },
 
 
@@ -32,4 +32,4 @@ const swiperArticle = () => {
 
 }
 
-export default swiperArticle
+export default swiperPopularGoods
