@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Главная</title>
+  </head>
+  <body>
+    <include src="./components/header.html"></include>
+
+    <main class="main main--main-page">
+        <section class="characteristics">
+            <div class="container">
+                <ul class="characteristics__list">
+                    <li class="characteristics__item">
+                        <h4 class="characteristics__item-title title-sm">Проверенное качество</h4>
+                        <div class="characteristics__item-desk-box">
+                            <p class="characteristics__item-desk text-sm">Производство с 2008 года</p>
+                            <div class="characteristics__item-svg-box ">
+                                <!-- <img src="./assets/images/icons/snowflake.svg" alt="Морозостойкие материалы"> -->
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li class="characteristics__item">
+                        <h4 class="characteristics__item-title title-sm">Цветные герметики </h4>
+                        <div class="characteristics__item-desk-box">
+                            <p class="characteristics__item-desk text-sm">колеруем в любой цвет RAL</p>
+                            <div class="characteristics__item-svg-box characteristics__item-svg-box--ral">
+                                <img src="./assets/images/icons/ral.svg" alt="Морозостойкие материалы">
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="characteristics__item characteristics__item--snowflake">
+                        <h4 class="characteristics__item-title title-sm">Морозостойкие материалы </h4>
+                        <div class="characteristics__item-desk-box">
+                            <p class="characteristics__item-desk text-sm">все наши герметики изготовлены для применения в условиях климата России</p>
+                            <div class="characteristics__item-svg-box characteristics__item-svg-box--snowflake">
+                                <img src="./assets/images/icons/snowflake.svg" alt="Морозостойкие материалы">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+      <section class="price-list">
+        <div class="container">
+          <div class="price-list__inner">
+            <p class="price-list__desk">Прайс-лист</p>
+            <div class="price-list__header-box">
+              <h2 class="price-list__title title-sm">
+                Прямая продажа от производителя
+              </h2>
+              <a href="#" class="price-list__button button button__arr"
+                >Открыть прайс-лист
+                <div class="price-list__button-svg-box button__arr-svg-box">
+                  <img
+                    src="./assets/images/icons/arr_right_white.svg"
+                    alt="стрелка вправо"
+                  />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <include src="./components/popular.html"></include>
+    </main>
+  </body>
+</html>

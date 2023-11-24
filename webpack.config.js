@@ -1,3 +1,5 @@
+
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
@@ -14,6 +16,8 @@ const devtool = devMode ? "source-map" : undefined;
 const entryPoints = {
   index: path.resolve(__dirname, "src", "index.js"),
   payment: path.resolve(__dirname, "src", "index.js"),
+  article: path.resolve(__dirname, "src", "index.js"),
+  main: path.resolve(__dirname, "src", "index.js"),
 };
 
 // Создаем экземпляры HtmlWebpackPlugin для каждой страницы
