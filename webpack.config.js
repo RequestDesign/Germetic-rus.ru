@@ -18,6 +18,8 @@ const entryPoints = {
   payment: path.resolve(__dirname, "src", "index.js"),
   article: path.resolve(__dirname, "src", "index.js"),
   main: path.resolve(__dirname, "src", "index.js"),
+  about_company: path.resolve(__dirname, "src", "index.js"),
+  card_product: path.resolve(__dirname, "src", "index.js"),
 
 };
 

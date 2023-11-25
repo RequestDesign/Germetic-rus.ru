@@ -48,7 +48,18 @@
   // .article__social-link
 
   &__social-link {
-
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow 0.3s;
+    margin-top: 0;
+    &:hover {
+      box-shadow: 0 0 1rem 0 $grey;
+    }
   }
 
   // .article__social-svg-box
@@ -231,7 +242,7 @@
     padding-bottom: 2px;
     border-bottom: 1px solid $black;
     width: fit-content;
-    transition: all 0.3s;
+    transition: color 0.3s, border-bottom 0.3s;
     &:hover {
       color: $red;
       border-bottom: 1px solid $red;
