@@ -82,6 +82,7 @@
   &__content-text--tel {
     margin-top: 2.4rem;
     margin-bottom: 3.2rem;
+    display: block;
   }
 
   // .delivery__content-companies
@@ -154,9 +155,9 @@
     display: block;
     width: fit-content;
 
-    transition: all 0.3s;
+    transition:  box-shadow 0.3s;
     &:hover {
-      box-shadow: 0 0 10px 0 $grey;
+      box-shadow: 0 0 1rem 0 $grey;
     }
   }
 
@@ -183,9 +184,9 @@
     align-items: center;
     gap: 0.8rem;
 
-    transition: all 0.3s;
+    transition:  box-shadow 0.3s;
     &:hover {
-      box-shadow: 0 0 10px 0 $black;
+      box-shadow: 0 0 1rem 0 $black;
     }
   }
 
