@@ -1,6 +1,16 @@
 .header {
   position: relative;
   width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 60%;
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background-color: $grey;
+  }
   &.modal-search {
     &::after {
       content: "";
@@ -32,6 +42,7 @@
       }
     }
     &-nav {
+      margin-right: 45rem;
       & ul {
         display: flex;
         gap: 2.4rem;
@@ -62,18 +73,9 @@
         color: $grey;
       }
       &-icon {
+        width: 5.6rem;
+        height: 5.6rem;
       }
-    }
-    &::after {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      content: "";
-      display: block;
-      transform: translateX(-10%);
-      width: 123.3%;
-      height: 0.1rem;
-      background-color: #BDBDBD;
     }
   }
   &__bottom {
@@ -130,6 +132,7 @@
       }
       &-title {
         margin-bottom: 2.4rem;
+        font-weight: 500;
         color: $black;
         text-decoration: none;
       }
@@ -138,6 +141,9 @@
         width: 34.7rem;
         display: flex;
         gap: 1.6rem;
+        & li:hover a {
+          color: $red;
+        }
       }
       &-item {
         font-weight: 500;
@@ -166,16 +172,21 @@
     }
   }
   &__search {
-    position: relative;
+    position: absolute;
+    right: 32.2rem;
     z-index: 5;
     width: 44.6rem;
     transition: width 0.4s ease-in-out;
     &.active {
       width: 110.3rem;
+      right: 32.2rem;
+      & input {
+        border: 0;
+      }
     }
     & input {
       width: 100%;
-      padding: 1.6rem 3.2rem;
+      padding: 1.55rem 3.2rem;
       border: 0.1rem solid $grey;
       border-radius: 9.6rem;
       font-family: 'Inter';
@@ -184,6 +195,7 @@
       line-height: 140%;
       color: $black;
       background-color: $white;
+      
       &::-webkit-search-cancel-button {
         display: none;
       }
@@ -193,8 +205,9 @@
         }
       }
     }
-    & .header__search-hint {
+    &-hint {
       position: absolute;
+      display: none;
       top: 50%;
       left: 15rem;
       transform: translateY(-40%);
@@ -233,8 +246,10 @@
       &.button {
         padding: 1.2rem 3.2rem;
         right: 0.4rem;
+        top: 0.4rem;
         border: 0;
         gap: 1.5rem;
+        transform: translateY(0);
         & svg path{
           fill: $white;
         }
