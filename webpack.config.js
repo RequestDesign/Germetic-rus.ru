@@ -20,7 +20,6 @@ const entryPoints = {
   main: path.resolve(__dirname, "src", "index.js"),
   about_company: path.resolve(__dirname, "src", "index.js"),
   card_product: path.resolve(__dirname, "src", "index.js"),
-
 };
 
 // Создаем экземпляры HtmlWebpackPlugin для каждой страницы
@@ -90,7 +89,7 @@ module.exports = {
     clean: true,
     //название js файла в билде
     // [name] - стандартный по вебпаку (main), [contenthash] - добавляептся хэш к названию
-    filename: "[name][contenthash].js",
+    filename: "[name].js",
     assetModuleFilename: "assets/images",
   },
 
@@ -105,10 +104,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
-    // new webpack.ProvidePlugin({
-    //   $: "jquery",
-    //   jQuery: "jquery"
-    // }),
   ],
 
   module: {

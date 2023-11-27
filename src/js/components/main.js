@@ -15,8 +15,3 @@ try{
 try{
     swiperHeroMain()
 } catch {}
-
-
-
-
-
