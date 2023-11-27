@@ -2,6 +2,8 @@ import mapDelivery from "./map_delivery";
 import swiperPopularGoods from "./swiper_popular-goods";
 import swiperPopularCategories from "./swiper_popular-categories";
 import swiperHeroMain from "./swiper_hero_main";
+import swiperReviews from "./swiper_reviews";
+import fancyapps from "./fancyapps_main";
 
 try{
     mapDelivery()
@@ -15,3 +17,14 @@ try{
 try{
     swiperHeroMain()
 } catch {}
+try{
+    swiperReviews()
+} catch {}
+try{
+    fancyapps()
+} catch {}
+
+
+
+
+

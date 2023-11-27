@@ -15,16 +15,14 @@ $light-grey: #f3f4f4;
   top: -10.6rem;
 }
 @mixin swiper-btn-prev-top {
-  left: calc(100% - 12rem);
+  left: calc(100% - 12.8rem);
 }
 @mixin swiper-btn-next-top {
   right: 0;
 }
 
-
 @mixin swiper-btn-midle {
   top: 50%;
-
 }
 @mixin swiper-btn-prev-midle {
   left: -2.8rem;
@@ -33,11 +31,9 @@ $light-grey: #f3f4f4;
   right: -2.8rem;
 }
 
-
 body {
-  color: $black; 
+  color: $black;
 }
-
 
 //text
 .title {
@@ -91,8 +87,12 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-}
+  transition: background-color 0.3s;
 
+  &:hover {
+    background-color: $red;
+  }
+}
 
 .button {
   display: flex;
@@ -104,9 +104,13 @@ body {
   font-weight: 400;
   line-height: normal;
   gap: 0.8rem;
-  border: 1px solid $black;
+  // border: 1px solid $black;
   border-radius: 100px;
   width: fit-content;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: $red;
+  }
 }
 
 .btn {
@@ -118,48 +122,20 @@ body {
   color: $black;
 }
 
-.btn--white {
+.btn--transparent {
   font-family: "Inter";
   color: $black;
   font-weight: 400;
   line-height: normal;
   border-radius: 10rem;
-  border: 1px solid  $black;
-  background-color: $white;
+  border: 1px solid $black;
+  background-color: transparent;
   font-size: 1.6rem;
-}
+  transition: color 0.3s, background-color 0.3s;
 
-.swiper-button-prev.btn-swiper,
-.swiper-button-next.btn-swiper {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  border: 1px solid #cdcdcd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: box-shadow 0.3s, opacity 0.3s;
-  margin-top: 0;
   &:hover {
-    box-shadow: 0 0 1rem 0 $grey;
-  }
-
-  &::after {
-      content: "";
-      width: 2.4rem;
-      height: 1.7rem;
-      object-fit: contain;
-    } 
-}
-
-.swiper-button-prev.btn-swiper{
-  &::after {
-    background: url(./assets/images/icons/arrow_left.svg) no-repeat top/cover;
-  }
-}
-.swiper-button-next.btn-swiper{
-  &::after {
-    background: url(./assets/images/icons/arrow_right.svg) no-repeat top/cover;
+    color: $white;
+    background-color: $black;
   }
 }
 
@@ -180,6 +156,50 @@ body {
     gap: 0.8rem;
   }
 }
+
+
+.swiper-button-prev.btn-swiper,
+.swiper-button-next.btn-swiper {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, opacity 0.3s;
+  margin: 0;
+  background-color: transparent;
+  overflow: hidden;
+  padding: 0;
+
+  &:hover {
+    background-color: $black;
+
+    & .btn-swiper__svg-box {
+      & svg {
+        stroke: $white;
+      }
+    }
+  }
+  &::after {
+    display: none;
+  }
+
+  & .btn-swiper__svg-box {
+    width: 2rem;
+    height: 1.5rem;
+    & svg {
+      transition: stroke 0.3s;
+      stroke: $black;
+      object-fit: contain;
+    }
+  }
+}
+
+
+
+
 
 [class*="copyrights-pane"] {
   display: none;
