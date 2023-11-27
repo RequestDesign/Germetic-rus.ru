@@ -60,6 +60,10 @@
 
   &__card {
     background-color: $light-grey;
+
+    &:hover .popular-categories__card-title {
+      color: $red;
+    }
   }
 
   // .popular-categories__card-img-box
@@ -87,6 +91,7 @@
   // .popular-categories__card-title
 
   &__card-title {
+    transition: color 0.3s;
   }
 
   // .popular-categories__card-desk
