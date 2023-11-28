@@ -55,10 +55,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: box-shadow 0.3s;
+    transition: background-color 0.3s;
     margin-top: 0;
     &:hover {
-      box-shadow: 0 0 1rem 0 $grey;
+      background-color: $black;
+
+      & svg {
+        fill: $white;
+      }
     }
   }
 
@@ -72,6 +76,8 @@
     justify-content: center;
     & svg {
       object-fit: contain;
+      fill: $black;
+      transition: fill 0.3s;
     }
   }
 
@@ -242,10 +248,9 @@
     padding-bottom: 2px;
     border-bottom: 1px solid $black;
     width: fit-content;
-    transition: color 0.3s, border-bottom 0.3s;
+    transition: border-bottom 0.3s;
     &:hover {
-      color: $red;
-      border-bottom: 1px solid $red;
+      border-bottom: 1px solid transparent;
     }
   }
 }

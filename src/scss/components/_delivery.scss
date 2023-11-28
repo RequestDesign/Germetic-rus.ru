@@ -155,10 +155,7 @@
     display: block;
     width: fit-content;
 
-    transition:  box-shadow 0.3s;
-    &:hover {
-      box-shadow: 0 0 1rem 0 $grey;
-    }
+
   }
 
   // .delivery__content-adress-list
@@ -183,11 +180,6 @@
     display: flex;
     align-items: center;
     gap: 0.8rem;
-
-    transition:  box-shadow 0.3s;
-    &:hover {
-      box-shadow: 0 0 1rem 0 $black;
-    }
   }
 
   // .delivery__content-btn-img-box

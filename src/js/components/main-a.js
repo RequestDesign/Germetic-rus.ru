@@ -1,6 +1,6 @@
 'use strict';
 import Swiper from 'swiper/bundle';
-window.$ = window.jQuery = require('jquery');
+// window.$ = window.jQuery = require('jquery');
 const rem = function (rem) {
   if (window.innerWidth > 768) {
     return 0.005208335 * window.innerWidth * rem;
@@ -85,7 +85,7 @@ function hideSearch() {
     null,
     window.location.pathname + window.location.search,
   );
-  window.scrollTo(0, scrollY);
+  // window.scrollTo(0, scrollY);
   $('.header__search-dropdown').slideUp();
   setTimeout(function () {
     $('.header__search').removeClass('active');

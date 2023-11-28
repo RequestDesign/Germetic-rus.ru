@@ -1,0 +1,67 @@
+.recognized {
+padding: 8rem 0;
+    // .recognized__inner
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    // .recognized__header-box
+
+    &__header-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 85rem;
+        align-self: center;
+    }
+
+    // .recognized__title
+
+    &__title {
+
+        & span {
+            color: $red;
+        }
+    }
+
+    // .recognized__desk
+
+    &__desk {
+        width: 80rem;
+    }
+
+    // .recognized__list
+
+    &__list {
+        display: grid;
+       grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    // .recognized__item
+
+    &__item {
+        padding: 3.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+        border: 1px solid $grey;
+    }
+
+    // .recognized__item-title
+
+    &__item-title {
+    }
+
+    // .recognized__item-desk
+
+    &__item-desk {
+    }
+}
+
