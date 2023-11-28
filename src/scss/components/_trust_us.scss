@@ -1,5 +1,5 @@
 .trust-us {
-  padding: 8rem 0;
+  padding: 8rem 0 16rem;
   // .trust-us__inner
 
   &__inner {
@@ -138,5 +138,136 @@
   &__img-wrapper--ingenering {
     width: 14rem;
     height: 14rem;
+  }
+}
+@media (max-width: 48em) {
+  .trust-us {
+    padding: 10rem 0 20rem;
+    // .trust-us__inner
+  
+    &__inner {
+     flex-direction: column;
+      gap: 8rem;
+      position: relative;
+    }
+  
+    // .trust-us__content-box
+  
+    &__content-box {
+      width: 100%;
+      gap: 4.8rem;
+    }
+  
+    // .trust-us__title
+  
+    &__title {
+    }
+  
+    // .trust-us__desk
+  
+    &__desk {
+      font-size: 3rem;
+      line-height: 130%; 
+    }
+  
+    // .trust-us__header-btn
+  
+    &__header-btn {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 3.2rem;
+line-height: 130%; 
+padding: 3rem 8rem;
+    }
+  
+    // .trust-us__button-svg-box
+  
+    &__button-svg-box {
+    }
+  
+    // .trust-us__img-box
+  
+    &__img-box {
+      gap: 4.8rem;
+      width:100%;
+      padding-bottom: 14.4rem;
+    }
+  
+    &__img-box-row {
+    
+    }
+    // .trust-us__img-wrapper
+  
+    &__img-wrapper {
+
+  
+     
+  
+  
+    }
+  
+    // .trust-us__img-wrapper--mosstroy
+  
+    &__img-wrapper--mosstroy {
+      width: 18.4rem;
+      height: 18.4rem;
+    }
+  
+    // .trust-us__img-wrapper--pik
+  
+    &__img-wrapper--pik {
+      width: 18.4rem;
+      height: 18.4rem;
+    }
+  
+    // .trust-us__img-wrapper--assol
+  
+    &__img-wrapper--assol {
+      width: 18.4rem;
+      height: 18.4rem;
+    }
+  
+    // .trust-us__img-wrapper--gvsy
+  
+    &__img-wrapper--gvsy {
+      width: 18.4rem;
+      height: 18.4rem;
+    }
+  
+    // .trust-us__img-wrapper--kerama
+  
+    &__img-wrapper--kerama {
+      width: 23.8rem;
+      height: 10rem;
+    }
+  
+    // .trust-us__img-wrapper--grad
+  
+    &__img-wrapper--grad {
+      width: 18.8rem;
+      height: 18.8rem;
+    }
+  
+    // .trust-us__img-wrapper--kombinat
+  
+    &__img-wrapper--kombinat {
+      width: 19.4rem;
+      height: 19.4rem;
+    }
+  
+    // .trust-us__img-wrapper--morton
+  
+    &__img-wrapper--morton {
+      width: 18.4rem;
+      height: 18.4rem;
+    }
+  
+    // .trust-us__img-wrapper--ingenering
+  
+    &__img-wrapper--ingenering {
+      width: 19.4rem;
+      height: 19.4rem;
+    }
   }
 }
