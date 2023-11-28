@@ -1,6 +1,6 @@
 'use strict';
 import Swiper from 'swiper/bundle';
-// window.$ = window.jQuery = require('jquery');
+var $ = require('jquery');
 const rem = function (rem) {
   if (window.innerWidth > 768) {
     return 0.005208335 * window.innerWidth * rem;

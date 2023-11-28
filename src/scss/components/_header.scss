@@ -50,6 +50,9 @@
         margin-right: 11.3rem;
       }
       &-item {
+        &:hover a{
+          text-decoration: underline;
+        }
       }
     }
     &-contacts {
@@ -364,5 +367,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 48em) {
+  .header {
+    display: none;
   }
 }
