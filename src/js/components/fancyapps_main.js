@@ -3,8 +3,6 @@
 // import '@fancyapps/fancybox/dist/jquery.fancybox.min.js';
 
 
-
-
 const fancyapps = () => {
 
   $(document).ready(function () {
