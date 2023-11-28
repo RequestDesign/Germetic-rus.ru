@@ -17,7 +17,8 @@
 		}
 
 		&__summary {
-      
+      padding: 4rem;
+      background-color: $light-grey;
       &-wrap {
         width: 77rem;
         display: flex;
@@ -25,10 +26,12 @@
         gap: 1.6rem;
       }
       &-name {
-
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
       }
       &-title {
-
+        
       }
       &-subtitle {
         &-wrap {
