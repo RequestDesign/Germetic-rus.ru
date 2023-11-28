@@ -14,6 +14,7 @@ const swiperHeroMain = () => {
         grabCursor: true,
         updateOnWindowResize: true,
         watchSlidesProgress: true,
+        mousewheel: true,
         navigation: {
             nextEl: nextButton,
             prevEl: prevButton,
@@ -24,6 +25,7 @@ const swiperHeroMain = () => {
             renderBullet: function (index, className) {
                 return '<span class="' + className + '">' + pad(index + 1) + '</span>';
             },
+    
         },
         on: {
             init: function () {

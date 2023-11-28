@@ -1,0 +1,162 @@
+.about {
+padding: 8rem 0;
+    // .about__inner
+
+    &__inner {
+        display: flex;
+        gap: 2rem;
+        height: 69rem;
+        overflow: hidden;
+    }
+    // .about__content-wrapper
+
+    &__content-wrapper {
+        display: flex;
+        background-color: $light-grey;
+
+    }
+
+    // .about__content-img-box
+
+    &__content-img-box {
+        width: 50.7rem;
+        height: 69rem;
+
+        & img {
+            object-fit: cover;
+        }
+    }
+
+    // .about__content-img
+
+
+    // .about__content
+
+    &__content {
+        padding: 3.2rem;
+        width: 72rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    // .about__content-title-box
+
+    &__content-title-box {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+    // .about__content-title
+
+    &__content-title {
+
+    }
+
+    // .about__button
+
+    &__button {
+    }
+
+    // .about__button-svg-box
+
+    &__button-svg-box {
+    }
+
+    // .about__content-row
+
+    &__content-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 11.8rem;
+      
+    }
+
+    // .about__content-text
+
+    &__content-text {
+        min-width: 24.5rem;
+    }
+
+    // .about__certificate
+
+    &__certificate {
+        background-color: $light-grey;
+        padding: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    // .about__certificate-img-box
+
+    &__certificate-img-box {
+        width: 26.3rem;
+        height: 36.7rem;
+    }
+
+    // .about__certificate-img
+
+    &__certificate-img {
+        object-fit: contain;
+    }
+
+    // .about__certificate-info-box
+
+    &__certificate-info-box {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    // .about__certificate-title
+
+    &__certificate-title {
+    }
+
+    // .about__certificate-desk
+
+    &__certificate-desk {
+    }
+
+    // .about__certificate-svg-box
+
+    &__certificate-svg-box {
+        width: 16.8rem;
+        height: 2px;
+        & img {
+            object-fit: cover;
+        }
+    }
+
+    // .about__certificate-row
+
+    &__certificate-row {
+        display: flex;
+        gap: 8.3rem
+        ; align-items: flex-end;
+    }
+
+    // .about__certificate-row-img-box
+
+    &__certificate-row-img-box {
+        width: 12.4rem;
+        height: 6.8rem;
+        & img {
+            object-fit: cover;
+        }
+    }
+
+    // .about__certificate-link
+
+    &__certificate-link {
+    }
+
+    // .about__certificate-link-svg-box
+
+    &__certificate-link-svg-box {
+    }
+}

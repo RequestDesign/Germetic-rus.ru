@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: column;
     gap: 2.4rem;
-    mix-blend-mode: luminosity;
+
     width: 77rem;
   }
 
@@ -56,6 +56,25 @@
   // .trust-us__img-wrapper
 
   &__img-wrapper {
+    // mix-blend-mode: luminosity;
+    // transition: mix-blend-mode 0.3s;
+    // &:hover {
+    //   mix-blend-mode: normal;
+    // }
+
+    // & img {
+    //   pointer-events: none;
+    // }
+
+   
+    &:hover img{
+      filter: grayscale(0);
+    }
+
+    & img {
+      filter: grayscale(1);
+    transition: filter 0.3s;
+    }
   }
 
   // .trust-us__img-wrapper--mosstroy
