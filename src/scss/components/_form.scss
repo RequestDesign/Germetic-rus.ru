@@ -37,20 +37,20 @@
     transition: border-bottom 0.3s;
     height: 3.8rem;
     &::placeholder {
-        color:$grey;
-        transition: color 0.3s;
+      color: $grey;
+      transition: color 0.3s;
     }
 
     &:active::placeholder,
     &:focus::placeholder {
-        color:$black;
+      color: $black;
     }
     &:active,
     &:focus {
-        border-bottom: 1px solid $black;
+      border-bottom: 1px solid $black;
     }
     &:nth-child(3) {
-        align-self: flex-end;
+      align-self: flex-end;
     }
   }
 
@@ -94,7 +94,6 @@
   // .form__content-link-tel
 
   &__content-link-tel {
-
   }
 
   // .form__content-link-tel-svg-box
@@ -103,7 +102,111 @@
     width: 2.4rem;
     height: 2.4rem;
     & svg {
-        object-fit: contain;
+      object-fit: contain;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .form {
+    padding: 10rem 0;
+    // .form__inner
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    // .form__form
+
+    &__form {
+      flex-basis: 58.5%;
+      padding: 4rem 4rem 5.6rem;
+    }
+
+    // .form__title
+
+    &__title {
+      max-width: none;
+      font-size: 4rem;
+    }
+
+    // .form__input-box
+
+    &__input-box {
+      margin-top: 4.8rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    // .form__input
+
+    &__input {
+      padding-bottom: 3.2rem;
+      height: 7.2rem;
+
+      &:nth-child(1) {
+      }
+      &:nth-child(2) {
+      }
+      &:nth-child(3) {
+        grid-row: 2/3;
+      }
+    }
+
+    // .form__btn
+
+    &__btn {
+      width: 100%;
+      margin-top: 2rem;
+      font-size: 3.2rem;
+      font-weight: 400;
+      line-height: 130%;
+      justify-content: center;
+      padding: 3.6rem 18rem;
+    }
+
+    // .form__content
+
+    &__content {
+      flex-basis: 41.5%;
+      padding: 4rem;
+gap: 11.2rem;
+    }
+
+    // .form__content-row
+
+    &__content-row {
+
+      &--top {
+
+      }
+      &--bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4.8rem;
+      }
+    }
+
+    // .form__content-link-main
+
+    &__content-link-main {
+      padding: 2.8rem 9.6rem;
+      font-size: 3.2rem;
+    }
+
+    // .form__content-link-tel
+
+    &__content-link-tel {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    // .form__content-link-tel-svg-box
+
+    &__content-link-tel-svg-box {
+      width: 2.8rem;
+      height: 2.8rem;
     }
   }
 }
