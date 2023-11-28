@@ -1,0 +1,151 @@
+.about-hero {
+  padding: 6rem 0 16rem;
+  background: url(./assets/images/about_hero_bg.webp) no-repeat top/cover;
+  // .about-hero__inner
+
+  &__inner {
+    display: flex;
+    gap: 13rem;
+  }
+
+  // .about-hero__title-box
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .about-hero__title
+
+  &__title {
+  }
+
+  // .about-hero__title-data-box
+
+  &__title-data-box {
+    display: flex;
+    align-items: center;
+    padding-left: 13.8rem;
+    gap: 1.6rem;
+  }
+
+  // .about-hero__title-data
+
+  &__title-data {
+    color: $red;
+  }
+
+  // .about-hero__title-desk
+
+  &__title-desk {
+  }
+
+  // .about-hero__content-box
+
+  &__content-box {
+    width: 89rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+  }
+
+  // .about-hero__content-block
+
+  &__content-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  // .about-hero__text-title
+
+  &__text-title {
+    font-weight: 500;
+  }
+  // .about-hero__text
+
+  &__text {
+  }
+
+  // .about-hero__list-box
+
+  &__list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  // .about-hero__list-title
+
+  &__list-title {
+  }
+
+  // .about-hero__list
+
+  &__list {
+    padding-left: 2.7rem;
+  }
+
+  // .about-hero__item
+
+  &__item {
+    list-style-type: disc;
+  }
+
+  // .about-hero__content-list
+
+  &__content-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem 8rem;
+  }
+
+  // .about-hero__content-item
+
+  &__content-item {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  // .about-hero__content-item-svg-wrapper
+
+  &__content-item-svg-wrapper {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $black;
+    border-radius: 50%;
+  }
+
+  // .about-hero__content-item-svg-box
+
+  &__content-item-svg-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    & img {
+        object-fit: contain;
+    }
+  }
+
+  // .about-hero__content-item-info
+
+  &__content-item-info {
+    width: 30.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  // .about-hero__content-item-info-title
+
+  &__content-item-info-title {
+    font-weight: 500;
+  }
+
+  // .about-hero__content-item-info-desk
+
+  &__content-item-info-desk {
+  }
+}

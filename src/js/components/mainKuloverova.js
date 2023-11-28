@@ -4,6 +4,8 @@ import swiperPopularCategories from "./swiper_popular-categories";
 import swiperHeroMain from "./swiper_hero_main";
 import swiperReviews from "./swiper_reviews";
 import fancyapps from "./fancyapps_main";
+import swiperCertificates from "./swiper_certificates";
+import form from "./form";
 
 try{
     mapDelivery()
@@ -22,6 +24,12 @@ try{
 } catch {}
 try{
     fancyapps()
+} catch {}
+try{
+    swiperCertificates()
+} catch {}
+try{
+    form()
 } catch {}
 
 
