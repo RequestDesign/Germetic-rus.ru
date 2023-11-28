@@ -1,0 +1,123 @@
+.product {
+    margin-bottom: 16rem;
+		&__wrapper {
+      margin-top: 6rem;
+      margin-bottom: 10rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+		}
+		&__image {
+      width: 61.5rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+		}
+
+		&__summary {
+      
+      &-wrap {
+        width: 77rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+      &-name {
+
+      }
+      &-title {
+
+      }
+      &-subtitle {
+        &-wrap {
+
+        }
+      }
+      &-num {
+
+      }
+      &-availability {
+
+      }
+      &-feature {
+
+      }
+      &-colors {
+        &-list {
+
+        }
+      }
+      &-color {
+        &-title {
+
+        }
+        &-btn {
+
+        }
+      }
+      &-sizes {
+        &-list {
+
+        }
+      }
+      &-size {
+
+      }
+      &-cost {
+        &-btn {
+
+        }
+      }
+      &-bottom {
+
+      }
+		}
+
+		&__info {
+      &-title {
+
+      }
+      &-text {
+
+      }
+      &-contacts {
+
+      }
+      &-link {
+
+      }
+      &-btn {
+
+      }
+		}
+
+		&__content {
+		}
+
+		&__tabs-wrap {
+		}
+
+		&__tab {
+      &-content {
+
+      }
+      &-title {
+
+      }
+      &-text {
+
+      }
+      &-list {
+
+      }
+		}
+
+		&__price {
+      &-title {
+
+      }
+		}
+
+}
