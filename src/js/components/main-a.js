@@ -44,6 +44,47 @@ $(function () {
   }
 })
 
+$('.product__clear').on('click', function () {
+  const parent = $(this).closest('.product__summary-size');
+  console.log(parent);
+  $(this).closest('.product__summary-size').removeClass('active');
+})
+
+$('.product__summary-size').on('click', function () {
+  if(!$(this).hasClass('active')) {
+    $('.product__summary-size').removeClass('active');
+    $(this).addClass('active');
+  } else {
+    $(this).removeClass('active');
+  }
+})
+
+$('.product__summary-color').on('click', function () {
+  if(!$(this).hasClass('active')) {
+    $('.product__summary-color').removeClass('active');
+    $(this).addClass('active');
+  }
+})
+
+//tabs//
+$(`.product__tab-content[data-tab="1"]`).show();
+$('.product__tab').on('click', function () {
+  const tabIndex = $(this).attr("data-tab");
+  if (!$(this).hasClass('active')) {
+    $('.product__tab').removeClass('active');
+    $(this).addClass('active');
+    $('.product__tab-content').animate({
+      opacity: 0
+    }, 100, function () {
+      $(this).hide();
+      $(`.product__tab-content[data-tab="${tabIndex}"]`).show();
+    });
+    $(`.product__tab-content[data-tab="${tabIndex}"]`).animate({
+      opacity: 1
+    }, 100);
+  }
+});
+
 //header search//
 
 $('.header__search-dropdown').hide();
@@ -135,3 +176,11 @@ $(document).on('click', function(event) {
     $('.header__search-clear').hide();
   }
 });
+
+//swipers//
+const slider = new Swiper('.product__tabs', {
+  slidesPerView: 'auto',
+  spaceBetween: rem(0.8),
+  watchOverflow: true,
+})
+

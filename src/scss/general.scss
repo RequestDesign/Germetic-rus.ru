@@ -157,6 +157,17 @@ body {
   }
 }
 
+.btn-link {
+  font-family: 'Inter';
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border-bottom: 0.1rem solid $black;
+  &:hover {
+    border-bottom: 0;
+  }
+}
 
 .swiper-button-prev.btn-swiper,
 .swiper-button-next.btn-swiper {

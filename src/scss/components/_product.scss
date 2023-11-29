@@ -27,99 +27,275 @@
       }
       &-name {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-between;
+        margin-bottom: 3.2rem;
       }
       &-title {
-        
+        width: 95%;
+        margin-bottom: 2.4rem;
       }
-      &-subtitle {
-        &-wrap {
-
-        }
+      &-subtitle-wr {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
       }
       &-num {
-
+        & span {
+          color: $grey;
+          margin-left: 0.8rem;
+        }
       }
       &-availability {
-
+        display: flex;
+        align-items: center;
+        & span {
+          display: block;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          margin-right: 0.8rem;
+          &.available {
+            background-color: #6DC684;
+          }
+          &.unavailable {
+            background-color: $grey;
+          }
+        }
       }
       &-feature {
-
+        position: relative;
+        display: flex;
+        padding: 2rem 0;
+        margin-bottom: 3.2rem;
+        &::after,
+        &::before {
+          position: absolute;
+          content: '';
+          display: block;
+          left: 0;
+          width: 100%;
+          height: 0.1rem;
+          background-color: $grey;
+        }
+        &::after {
+          bottom: 0;
+        }
+        &::before {
+          top: 0;
+        }
       }
-      &-colors {
+      &-item {
+        display: flex;
+        flex-direction: column;
+        margin-right: 22.7rem;
+        &-title {
+          margin-bottom: 1.6rem;
+        }
         &-list {
-
+          display: flex;
+          align-items: center;
+          gap: 1.6rem;
         }
       }
       &-color {
-        &-title {
-
+        width: 3.4rem;
+        height: 3.4rem;
+        border-radius: 50%;
+        background-color: $grey;
+        cursor: pointer;
+        &.blue {
+          background-color: #4989EA;
+        }
+        &.active {
+          padding: 0.3rem;
+          border: 0.3rem solid #4989EA;
+          background-clip: content-box;
         }
         &-btn {
-
-        }
-      }
-      &-sizes {
-        &-list {
-
+          display: flex;
+          align-items: center;
+          font-weight: 500;
+          cursor: pointer;
+          & .btn-more-arr {
+            width: 1.4rem;
+            height: 0.7rem;
+            margin-left: 1.6rem;
+            & img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+            
+          }
         }
       }
       &-size {
-
+        display: flex;
+        padding: 1.5rem 2.2rem;
+        font-weight: 500;
+        line-height: 100%;
+        cursor: pointer;
+        transition: color 0.3s, background-color 0.3s;
+        &:hover {
+          background-color: $grey;
+          color: $black;
+        }
+        & .icon-close {
+          width: 1.4rem;
+          height: 1.4rem;
+          display: none;
+          cursor: pointer;
+          & img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        &.active {
+          & .icon-close {
+            margin-left: 0.8rem;
+            display: block;
+          }
+        }
       }
       &-cost {
+        display: flex;
+        margin-bottom: 3.2rem;
+        align-items: center;
+        justify-content: space-between;
         &-btn {
 
         }
       }
       &-bottom {
-
+        display: flex;
+        gap: 2.4rem;
       }
 		}
+    &__cost {
+      font-weight: 500;
+      & span {
+        color: $red;
+        margin-left: 0.6rem;
+      }
+    }
 
 		&__info {
+      padding: 4rem;
+      background-color: $light-grey;
       &-title {
-
+        margin-bottom: 2.4rem;
       }
       &-text {
-
+        margin-bottom: 0.9rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
       &-contacts {
-
+        margin-top: 3.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
       &-link {
-
+        font-weight: 500;
       }
       &-btn {
-
+        padding: 1.4rem 1.8rem;
       }
 		}
 
 		&__content {
+      display: flex;
+      justify-content: space-between;
 		}
 
-		&__tabs-wrap {
+		&__tabs{
+      margin-bottom: 4rem;
+      &-wrap {
+      width: 77rem;
+      }
 		}
 
 		&__tab {
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      padding: 1.5rem 2.1rem;
+      font-family: "Inter";
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 100%;
+      color: $black;
+      border-radius: 10rem;
+      border: 0.1rem solid $black;
+      cursor: pointer;
+      transition: color 0.3s, background-color 0.3s;
+      &.swiper-slide {
+        width: fit-content;
+      }
+      &.active,
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
       &-content {
-
+        display: none;
+        min-height: 0;
+        max-height: fit-content;
+        &-wrap {
+          transition: max-height 0.8s ease-in-out;
+        }
       }
       &-title {
-
+        margin-bottom: 2.4rem;
       }
       &-text {
-
+        margin-bottom: 5.6rem;
+        & p {
+          margin-bottom: 0.9rem;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
       &-list {
-
+        margin-bottom: 5.6rem;
+        & li {
+          display: flex;
+          align-items: baseline;
+          margin-bottom: 1.6rem;
+          &::before {
+            content: '';
+            display: block;
+            width: 0.8rem;
+            height: 0.8rem;
+            border-radius: 50%;
+            background-color: $red;
+            margin-right: 1.6rem;
+          }
+        }
       }
 		}
 
 		&__price {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      row-gap: 7.9rem;
+      width: 77rem;
+      height: 30.8rem;
+      margin-top: 8.7rem;
+      padding: 4rem;
+      background-image: url(./assets/images/price-list-bg.webp);
       &-title {
-
+        width: 100%;
+      }
+      & .text {
+        font-weight: 500;
       }
 		}
 

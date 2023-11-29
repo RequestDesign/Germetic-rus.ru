@@ -21,40 +21,43 @@
                 <div class="product__summary-name">
                   <div class="product__summary-title title-s">Акриловый морозостойкий герметик Рустил Акрил 15 кг</div>
                   <div class="product__summary-subtitle-wr">
-                    <div class="product__summary-num">Код товара:<span>140299</span></div>
-                    <div class="product__summary-availability"><span></span>В наличии</div>
+                    <div class="product__summary-num text-sm">Код товара:<span>140299</span></div>
+                    <div class="product__summary-availability text-sm"><span class="available"></span>В наличии</div>
                   </div>
                 </div>
                 <div class="product__summary-feature">
-                  <div class="product__summary-colors">
-                    <div class="product__summary-color-title text">Цвет</div>
-                    <div class="product__summary-colors-list">
+                  <div class="product__summary-item">
+                    <div class="product__summary-item-title text">Цвет</div>
+                    <div class="product__summary-item-list">
                       <div class="product__summary-color"></div>
-                      <div class="product__summary-color active"></div>
-                      <div class="product__summary-color-btn btn-more">
-
+                      <div class="product__summary-color blue active"></div>
+                      <div class="product__summary-color-btn btn-more text">
+                        Еще
+                        <div class="btn-more-arr">
+                          <img src="./assets/images/icons/arr-down.svg" alt="">
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="product__summary-sizes">
-                    <div class="product__summary-color-title text">Цвет</div>
-                    <div class="product__summary-sizes-list">
-                      <div class="product__summary-size active">7кг
+                  <div class="product__summary-item">
+                    <div class="product__summary-item-title text">Фасовка</div>
+                    <div class="product__summary-item-list">
+                      <div class="product__summary-size btn--transparent active">7кг
                         <div class="product__clear icon-close">
-                          <img src="./assets/images/icons/close-icon.svg" alt="">
+                          <img src="./assets/images/icons/cross-small.svg" alt="">
                         </div>
                       </div>
-                      <div class="product__summary-size">15кг
+                      <div class="product__summary-size btn--transparent ">15кг
                         <div class="product__clear icon-close">
-                          <img src="./assets/images/icons/close-icon.svg" alt="">
+                          <img src="./assets/images/icons/cross-small.svg" alt="">
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="product__summary-cost">
-                  <div class="product__cost">Опт:<span>630 ₽/шт</span></div>
-                  <div class="product__cost">Розница:<span>680 ₽/шт</span></div>
+                  <div class="product__cost text">Опт:<span class="title-s">630 ₽/шт</span></div>
+                  <div class="product__cost text">Розница:<span class="title-s">680 ₽/шт</span></div>
                   <button class="product__cost-btn button button__arr" type="button">
                     Получить счёт/КП
                     <div class="popular-categories__button-svg-box button__arr-svg-box">
@@ -75,69 +78,148 @@
                   через форму “Получить счет/КП” или напишите в Whatsapp.
                 </p>
                 <div class="product__info-contacts">
-                  <a class="product__info-link" href="mailto:info@germetic-rus.ru">info@germetic-rus.ru</a>
-                  <a class="product__info-btn btn--white" href="tel:8 (495) 120-23-29">8 (495) 120-23-29</a>
+                  <a class="product__info-link text" href="mailto:info@germetic-rus.ru">info@germetic-rus.ru</a>
+                  <a class="product__info-btn btn--transparent" href="tel:8 (495) 120-23-29">8 (495) 120-23-29</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="product__content">
             <div class="product__tabs-wrap">
-              <div class="product__tab button active"></div>
-              <div class="product__tab btn--white"></div>
-              <div class="product__tab btn--white"></div>
-              <div class="product__tab btn--white"></div>
-
-              <div class="product__tab-content active">
-                <div class="product__tab-title title-s">Свойства и характеристики</div>
-                <div class="product__tab-text text">
-                  <p>
-                    Герметизирующий материал затвердевает за счет испарения влаги, при этом сохраняет свою эластичность. 
-                    Полное время полимеризации – до 7 суток. Температурный режим для использования – от -10 до +35°C. 
-                    Паста сохраняет эксплуатационные свойства при t° от -40 до +70-80°C.
-                  </p>
-                  <p>
-                    Серый однокомпонентный герметик Рустил отличается высокой прочностью. Он надежно сцепляется с бетоном,
-                     кирпичом, деревом, камнем. На высохшую поверхность можно наносить лакокрасочные водно-дисперсионные материалы.
-                  </p>
+              <div class="product__tabs swiper">
+                <div class="swiper-wrapper">
+                  <div class="product__tab active swiper-slide" data-tab="1">Описание</div>
+                  <div class="product__tab swiper-slide" data-tab="2">Характеристики</div>
+                  <div class="product__tab swiper-slide" data-tab="3">Преимущества</div>
+                  <div class="product__tab swiper-slide" data-tab="4">Документы и сертификаты</div>
                 </div>
-                <div class="product__tab-title title-s">Преимущества</div>
-                <ul class="product__tab-list">
-                  <li>
-                    высокая адгезия
-                  </li>
-                  <li>
-                    морозостойкость, атмосферостойкость;
-                  </li>
-                  <li>
-                    устойчивость к неблагоприятным погодным условиям, ультрафиолету, перепадам температур;
-                  </li>
-                  <li>
-                    экологическая безопасность;
-                  </li>
-                  <li>
-                    экономичный расход;
-                  </li>
-                  <li>
-                    полностью готова к применению (не требует предварительного смешивания компонентов);
-                  </li>
-                  <li>
-                    доступная стоимость.
-                  </li>
-                </ul>
-                <div class="product__tab-title title-s">Область применения</div>
-                <div class="product__tab-text text">
-                  Материал используют для заполнения межпанельных швов, стыков, заделывания трещин в стенах, 
-                  дверных и оконных проемах. Состав также подойдет для монтажа металлопластиковых конструкций. 
-                  Чтобы заказать акриловый морозостойкий герметик Рустил Акрил в Москве, позвоните по телефону 
-                  +7 (495) 120-23-29 или оформите заявку прямо на сайте, и мы сами свяжемся с вами для уточнения 
-                  деталей оплаты и доставки продукции.
+              </div>
+
+              <div class="product__tab-content-wrap">
+                <div class="product__tab-content" data-tab="1">
+                  <div class="product__tab-title title-s">Свойства и характеристики</div>
+                  <div class="product__tab-text text-sm">
+                    <p>
+                      Герметизирующий материал затвердевает за счет испарения влаги, при этом сохраняет свою эластичность. 
+                      Полное время полимеризации – до 7 суток. Температурный режим для использования – от -10 до +35°C. 
+                      Паста сохраняет эксплуатационные свойства при t° от -40 до +70-80°C.
+                    </p>
+                    <p>
+                      Серый однокомпонентный герметик Рустил отличается высокой прочностью. Он надежно сцепляется с бетоном,
+                       кирпичом, деревом, камнем. На высохшую поверхность можно наносить лакокрасочные водно-дисперсионные материалы.
+                    </p>
+                  </div>
+                  <div class="product__tab-title title-s">Преимущества</div>
+                  <ul class="product__tab-list">
+                    <li class="text-sm">
+                      высокая адгезия
+                    </li>
+                    <li class="text-sm">
+                      морозостойкость, атмосферостойкость;
+                    </li>
+                    <li class="text-sm">
+                      устойчивость к неблагоприятным погодным условиям, ультрафиолету, перепадам температур;
+                    </li>
+                    <li class="text-sm">
+                      экологическая безопасность;
+                    </li>
+                    <li class="text-sm">
+                      экономичный расход;
+                    </li>
+                    <li class="text-sm">
+                      полностью готова к применению (не требует предварительного смешивания компонентов);
+                    </li>
+                    <li class="text-sm">
+                      доступная стоимость.
+                    </li>
+                  </ul>
+                  <div class="product__tab-title title-s">Область применения</div>
+                  <div class="product__tab-text text-sm">
+                    Материал используют для заполнения межпанельных швов, стыков, заделывания трещин в стенах, 
+                    дверных и оконных проемах. Состав также подойдет для монтажа металлопластиковых конструкций. 
+                    Чтобы заказать акриловый морозостойкий герметик Рустил Акрил в Москве, позвоните по телефону 
+                    +7 (495) 120-23-29 или оформите заявку прямо на сайте, и мы сами свяжемся с вами для уточнения 
+                    деталей оплаты и доставки продукции.
+                  </div>
+                </div>
+  
+                <div class="product__tab-content active" data-tab="2">
+                  <div class="product__tab-title title-s">Свойства и характеристики</div>
+                  <div class="product__tab-text text-sm">
+                    <p>
+                      Герметизирующий материал затвердевает за счет испарения влаги, при этом сохраняет свою эластичность. 
+                      Полное время полимеризации – до 7 суток. Температурный режим для использования – от -10 до +35°C. 
+                      Паста сохраняет эксплуатационные свойства при t° от -40 до +70-80°C.
+                    </p>
+                    <p>
+                      Серый однокомпонентный герметик Рустил отличается высокой прочностью. Он надежно сцепляется с бетоном,
+                       кирпичом, деревом, камнем. На высохшую поверхность можно наносить лакокрасочные водно-дисперсионные материалы.
+                    </p>
+                  </div>
+                  <div class="product__tab-title title-s">Область применения</div>
+                  <div class="product__tab-text text-sm">
+                    Материал используют для заполнения межпанельных швов, стыков, заделывания трещин в стенах, 
+                    дверных и оконных проемах. Состав также подойдет для монтажа металлопластиковых конструкций. 
+                    Чтобы заказать акриловый морозостойкий герметик Рустил Акрил в Москве, позвоните по телефону 
+                    +7 (495) 120-23-29 или оформите заявку прямо на сайте, и мы сами свяжемся с вами для уточнения 
+                    деталей оплаты и доставки продукции.
+                  </div>
+                </div>
+  
+                <div class="product__tab-content" data-tab="3">
+                  <div class="product__tab-title title-s">Область применения</div>
+                  <div class="product__tab-text text-sm">
+                    Материал используют для заполнения межпанельных швов, стыков, заделывания трещин в стенах, 
+                    дверных и оконных проемах. Состав также подойдет для монтажа металлопластиковых конструкций. 
+                    Чтобы заказать акриловый морозостойкий герметик Рустил Акрил в Москве, позвоните по телефону 
+                    +7 (495) 120-23-29 или оформите заявку прямо на сайте, и мы сами свяжемся с вами для уточнения 
+                    деталей оплаты и доставки продукции.
+                  </div>
+                </div>
+  
+                <div class="product__tab-content" data-tab="4">
+                  <div class="product__tab-title title-s">Свойства и характеристики</div>
+                  <div class="product__tab-text text-sm">
+                    <p>
+                      Герметизирующий материал затвердевает за счет испарения влаги, при этом сохраняет свою эластичность. 
+                      Полное время полимеризации – до 7 суток. Температурный режим для использования – от -10 до +35°C. 
+                      Паста сохраняет эксплуатационные свойства при t° от -40 до +70-80°C.
+                    </p>
+                    <p>
+                      Серый однокомпонентный герметик Рустил отличается высокой прочностью. Он надежно сцепляется с бетоном,
+                       кирпичом, деревом, камнем. На высохшую поверхность можно наносить лакокрасочные водно-дисперсионные материалы.
+                    </p>
+                  </div>
+                  <div class="product__tab-title title-s">Преимущества</div>
+                  <ul class="product__tab-list">
+                    <li class="text-sm">
+                      высокая адгезия
+                    </li>
+                    <li class="text-sm">
+                      морозостойкость, атмосферостойкость;
+                    </li>
+                    <li class="text-sm">
+                      устойчивость к неблагоприятным погодным условиям, ультрафиолету, перепадам температур;
+                    </li>
+                    <li class="text-sm">
+                      экологическая безопасность;
+                    </li>
+                    <li class="text-sm">
+                      экономичный расход;
+                    </li>
+                    <li class="text-sm">
+                      полностью готова к применению (не требует предварительного смешивания компонентов);
+                    </li>
+                    <li class="text-sm">
+                      доступная стоимость.
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
             <div class="product__price">
-              <div class="product__price-title title-sm">Прямая продажа от производителя</div>
-              <span>Прайс-лист</span>
+              <div class="product__price-title title-sm">Прямая продажа<br>от производителя</div>
+              <span class="text">Прайс-лист</span>
               <button class="product__cost-btn button button__arr" type="button">
                 Открыть прайс-лист
                 <div class="popular-categories__button-svg-box button__arr-svg-box">
