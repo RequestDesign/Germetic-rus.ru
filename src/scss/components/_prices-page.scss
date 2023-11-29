@@ -1,0 +1,163 @@
+.prices-page {
+  margin-top: 6rem;
+  margin-bottom: 16rem;
+  &__title {
+    margin-bottom: 4.8rem;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__table {
+    width: 77rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+  }
+  &__table-head {
+    background: $grey;
+    color: $white;
+    border: 0;
+    & th {
+      font-weight: 500;
+      color: $white;
+    }
+  }
+
+  &__column {
+    padding: 1.5rem 2.4rem;
+    vertical-align: middle;
+    width: 17rem;
+    text-align: left;
+    border: 0.1rem solid $grey;
+    &--first {
+      width: 42.9rem;
+      padding: 1.5rem 2.4rem;
+      vertical-align: middle;
+      text-align: left;
+      border: 0.1rem solid $grey;
+    }
+  
+  }
+  &__link {
+    &:hover {
+      border-bottom: 0.1rem solid $black;
+    }
+  }
+  &__aside {
+    width: 77rem;
+    & .product {
+      &__info {
+        background: url(./assets/images/modal-success.webp);
+      }
+      &__info-contacts {
+        position: relative;
+        flex-direction: column;
+        gap: 1.2rem;
+        align-items: flex-start;
+      }
+      &__info-icon {
+        position: absolute;
+        display: flex;
+        right: 0;
+        bottom: 0;
+        &:hover {
+          background-color: $black;
+          cursor: default;
+        }
+      }
+    }
+    &-btns {
+      display: flex;
+      gap: 4rem;
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    }
+    &-links {
+      display: flex;
+      gap: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .prices-page {
+    margin-top: 6rem;
+    margin-bottom: 16rem;
+    &__title {
+      margin-bottom: 4.8rem;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__table {
+      width: 77rem;
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+    &__table-head {
+      background: $grey;
+      color: $white;
+      border: 0;
+      & th {
+        font-weight: 500;
+        color: $white;
+      }
+    }
+  
+    &__column {
+      padding: 1.5rem 2.4rem;
+      vertical-align: middle;
+      width: 17rem;
+      text-align: left;
+      border: 0.1rem solid $grey;
+      &--first {
+        width: 42.9rem;
+        padding: 1.5rem 2.4rem;
+        vertical-align: middle;
+        text-align: left;
+        border: 0.1rem solid $grey;
+      }
+    
+    }
+    &__link {
+      &:hover {
+        border-bottom: 0.1rem solid $black;
+      }
+    }
+    &__aside {
+      width: 77rem;
+      & .product {
+        &__info {
+          background: url(./assets/images/modal-success.webp);
+        }
+        &__info-contacts {
+          position: relative;
+          flex-direction: column;
+          gap: 1.2rem;
+          align-items: flex-start;
+        }
+        &__info-icon {
+          position: absolute;
+          display: flex;
+          right: 0;
+          bottom: 0;
+          &:hover {
+            background-color: $black;
+            cursor: default;
+          }
+        }
+      }
+      &-btns {
+        display: flex;
+        gap: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+      }
+      &-links {
+        display: flex;
+        gap: 1.6rem;
+      }
+    }
+  }
+}

@@ -37,6 +37,14 @@
                           <img src="./assets/images/icons/arr-down.svg" alt="">
                         </div>
                       </div>
+                      <div class="product__summary-color-list">
+                        <div class="product__summary-color" style="background-color: blueviolet;"></div>
+                        <div class="product__summary-color" style="background-color: green;"></div>
+                        <div class="product__summary-color" style="background-color: brown;"></div>
+                        <div class="product__summary-color" style="background-color: burlywood;"></div>
+                        <div class="product__summary-color" style="background-color: mediumturquoise;"></div>
+                        <div class="product__summary-color" style="background-color: gold;"></div>
+                      </div>
                     </div>
                   </div>
                   <div class="product__summary-item">
@@ -58,7 +66,7 @@
                 <div class="product__summary-cost">
                   <div class="product__cost text">Опт:<span class="title-s">630 ₽/шт</span></div>
                   <div class="product__cost text">Розница:<span class="title-s">680 ₽/шт</span></div>
-                  <button class="product__cost-btn button button__arr" type="button">
+                  <button class="product__cost-btn button button__arr" type="button" id="modal-bill">
                     Получить счёт/КП
                     <div class="popular-categories__button-svg-box button__arr-svg-box">
                       <img src="./assets/images/icons/arr_right_white.svg" alt="стрелка вправо">
@@ -80,6 +88,11 @@
                 <div class="product__info-contacts">
                   <a class="product__info-link text" href="mailto:info@germetic-rus.ru">info@germetic-rus.ru</a>
                   <a class="product__info-btn btn--transparent" href="tel:8 (495) 120-23-29">8 (495) 120-23-29</a>
+                  <div class="product__info-icon button--circle">
+                    <div class="form__content-link-tel-svg-box">
+                      <img src="./assets/images/icons/call-calling.svg" alt="Телефон" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -112,25 +125,25 @@
                   <div class="product__tab-title title-s">Преимущества</div>
                   <ul class="product__tab-list">
                     <li class="text-sm">
-                      высокая адгезия
+                      <span>высокая адгезия</span>
                     </li>
                     <li class="text-sm">
-                      морозостойкость, атмосферостойкость;
+                      <span>морозостойкость, атмосферостойкость;</span>
                     </li>
                     <li class="text-sm">
-                      устойчивость к неблагоприятным погодным условиям, ультрафиолету, перепадам температур;
+                      <span>устойчивость к неблагоприятным погодным условиям, ультрафиолету, перепадам температур;</span>
                     </li>
                     <li class="text-sm">
-                      экологическая безопасность;
+                      <span>экологическая безопасность;</span>
                     </li>
                     <li class="text-sm">
-                      экономичный расход;
+                      <span>экономичный расход;</span>
                     </li>
                     <li class="text-sm">
-                      полностью готова к применению (не требует предварительного смешивания компонентов);
+                      <span>полностью готова к применению (не требует предварительного смешивания компонентов);</span>
                     </li>
                     <li class="text-sm">
-                      доступная стоимость.
+                      <span>доступная стоимость.</span>
                     </li>
                   </ul>
                   <div class="product__tab-title title-s">Область применения</div>
@@ -231,6 +244,8 @@
         </div>
       </section>
       <include src="./components/popular_goods.html"></include>
+      <include src="./components/modal-bill.html"></include>
+      <include src="./components/modal-success.html"></include>
     </main>
     <include src="./components/footer.html"></include>
   </body>
