@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=ffac2b37-9f44-43d8-8e3e-92f15073c2d1"></script>
+    <title>Карточка товара</title>
+  </head>
+  <body>
+    <include src="./components/header.html"></include>
+
+    <main class="main">
+      <section class="contacts">
+        <div class="container contacts__container">
+          <div class="contacts__inner">
+            <p class="contacts__title title">Контакты</p>
+
+            <div class="contacts__content-box">
+              <div class="contacts__map-box">
+                <div id="map" class="contacts__map"></div>
+              </div>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <div class="contacts__item-svg-box">
+                    <img
+                      src="./assets/images/icons/contacts_adress.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="contacts__item-info">
+                    <p class="contacts__item-title text-sm">Адрес</p>
+                    <div class="contacts__item-desk-box">
+                      <p class="contacts__item-desk">
+                        г. Москва ул. Красная сосна, 2, корп. 1, стр. 1, оф.
+                        555, МОСТРАНССКЛАД
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__item-svg-box">
+                    <img src="./assets/images/icons/contacts_tel.svg" alt="" />
+                  </div>
+                  <div class="contacts__item-info">
+                    <p class="contacts__item-title text-sm">Телефон</p>
+                    <div class="contacts__item-desk-box">
+                      <a href="tel:+74951202329" class="contacts__item-desk"
+                        >8 (495) 120-23-29</a
+                      >
+                      <a href="tel:+79857653021" class="contacts__item-desk"
+                        >8 (985) 765-30-21</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__item-svg-box">
+                    <img src="./assets/images/icons/contacts_mail.svg" alt="" />
+                  </div>
+                  <div class="contacts__item-info">
+                    <p class="contacts__item-title text-sm">
+                      Электронная почта
+                    </p>
+                    <div class="contacts__item-desk-box">
+                      <a
+                        href="mailto:info@germetic-rus.ru"
+                        class="contacts__item-desk"
+                        >info@germetic-rus.ru</a
+                      >
+                    </div>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__item-svg-box">
+                    <img
+                      src="./assets/images/icons/contacts_regime.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="contacts__item-info">
+                    <p class="contacts__item-title text-sm">Режим работы</p>
+                    <div class="contacts__item-desk-box">
+                      <p class="contacts__item-desk">Пн-пт с 9:00 до 17:00</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__item-svg-box">
+                    <img src="./assets/images/icons/contacts_geo.svg" alt="" />
+                  </div>
+                  <div class="contacts__item-info">
+                    <p class="contacts__item-desk-geo text-sm">
+                      На территории МОСТРАНСКЛАД:
+                    </p>
+                    <div class="contacts__item-desk-box">
+                      <p class="contacts__item-desk-geo text-sm">
+                        С обратной стороны здания, по пандусу 3-й подъезд, лифт
+                        на 5-й этаж, по лестнице вверх, офис 555
+                      </p>
+                    </div>
+                    <a href="#" class="contacts__link">Скачать схему проезда</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="requisites">
+        <div class="container">
+          <div class="requisites__inner">
+            <p class="requisites__title title-sm">Реквизиты</p>
+            <ul class="requisites__list-box">
+              <li class="requisites__item-box">
+                <ul class="requisites__list">
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">Наименование:</p>
+                    <p class="requisites__item-desk text-sm">ООО «ЭКОХИМ»</p>
+                  </li>
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">ИНН:</p>
+                    <p class="requisites__item-desk text-sm">7720828697</p>
+                  </li>
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">КПП:</p>
+                    <p class="requisites__item-desk text-sm">772001001</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="requisites__item-box">
+                <ul class="requisites__list">
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">
+                      Юридический адрес:
+                    </p>
+                    <p class="requisites__item-desk text-sm">
+                      111141, г. Москва, ул. Плеханова, д.11, пом. VI, ком.1
+                    </p>
+                  </li>
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">ОГРН:</p>
+                    <p class="requisites__item-desk text-sm">5147746229230</p>
+                  </li>
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">
+                      Расчетный счет:
+                    </p>
+                    <p class="requisites__item-desk text-sm">
+                      40702810438000033125
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li class="requisites__item-box">
+                <ul class="requisites__list">
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">Корр.счет:</p>
+                    <p class="requisites__item-desk text-sm">
+                      30101810400000000225
+                    </p>
+                  </li>
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">БИК:</p>
+                    <p class="requisites__item-desk text-sm">044525225</p>
+                  </li>
+                  <li class="requisites__item">
+                    <p class="requisites__item-title text-sm">Банк:</p>
+                    <p class="requisites__item-desk text-sm">
+                      ПАО Сбербанк, город Москва
+                    </p>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+    <include src="./components/footer.html"></include>
+  </body>
+</html>

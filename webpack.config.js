@@ -20,6 +20,7 @@ const entryPoints = {
   main: path.resolve(__dirname, "src", "index.js"),
   about_company: path.resolve(__dirname, "src", "index.js"),
   card_product: path.resolve(__dirname, "src", "index.js"),
+  contacts: path.resolve(__dirname, "src", "index.js"),
 };
 
 // Создаем экземпляры HtmlWebpackPlugin для каждой страницы

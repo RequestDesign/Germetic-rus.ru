@@ -6,6 +6,7 @@ import swiperReviews from "./swiper_reviews";
 import fancyapps from "./fancyapps_main";
 import swiperCertificates from "./swiper_certificates";
 import form from "./form";
+// import mapContacts from "./map_contacts";
 
 try{
     mapDelivery()
@@ -31,6 +32,9 @@ try{
 try{
     form()
 } catch {}
+// try{
+//     mapContacts()
+// } catch {}
 
 
 
