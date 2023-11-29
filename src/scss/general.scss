@@ -230,6 +230,8 @@ height: 100%;
 [class*="copyrights-pane"] {
   display: none;
 }
+
+
 [class*="ground-pane"] {
   filter: grayscale(1);
 }
@@ -254,6 +256,16 @@ height: 100%;
       height: 3rem;
     
     }
+  }
+
+  .button__arr {
+gap: 3.4rem;
+    &-svg-box {
+      width: 3.2rem;
+      height: 2.4rem;
+   
+    }
+
   }
 
 }
