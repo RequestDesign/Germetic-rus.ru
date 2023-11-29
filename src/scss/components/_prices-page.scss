@@ -48,6 +48,7 @@
     & .product {
       &__info {
         background: url(./assets/images/modal-success.webp);
+        background-size: cover;
       }
       &__info-contacts {
         position: relative;
@@ -81,82 +82,63 @@
 
 @media (max-width: 48em) {
   .prices-page {
-    margin-top: 6rem;
-    margin-bottom: 16rem;
-    &__title {
-      margin-bottom: 4.8rem;
-    }
+    margin-top: 8.8rem;
+    margin-bottom: 20rem;
     &__content {
-      display: flex;
-      justify-content: space-between;
+      flex-direction: column-reverse;
     }
     &__table {
-      width: 77rem;
-      border-spacing: 0;
-      border-collapse: collapse;
-    }
-    &__table-head {
-      background: $grey;
-      color: $white;
-      border: 0;
+      width: 100%;
       & th {
-        font-weight: 500;
-        color: $white;
+        &:nth-child(2) {
+          padding: 2.8rem 0.4rem;
+          text-align: left;
+        }
+        &:nth-child(3) {
+          padding: 2.8rem 2rem;
+          text-align: left;
+        }
       }
     }
-  
     &__column {
-      padding: 1.5rem 2.4rem;
+      padding: 2.8rem 2.4rem;
       vertical-align: middle;
-      width: 17rem;
-      text-align: left;
-      border: 0.1rem solid $grey;
+      width: 16rem;
+      text-align: center;
+      border: 0.2rem solid $grey;
       &--first {
-        width: 42.9rem;
-        padding: 1.5rem 2.4rem;
-        vertical-align: middle;
+        width: 34.6rem;
+        padding: 2.8rem 2.4rem;
         text-align: left;
-        border: 0.1rem solid $grey;
+        border: 0.2rem solid $grey;
       }
     
     }
     &__link {
       &:hover {
-        border-bottom: 0.1rem solid $black;
+        border-bottom: 0.2rem solid $black;
       }
     }
     &__aside {
-      width: 77rem;
+      width: 100%;
       & .product {
-        &__info {
-          background: url(./assets/images/modal-success.webp);
-        }
         &__info-contacts {
-          position: relative;
-          flex-direction: column;
-          gap: 1.2rem;
-          align-items: flex-start;
-        }
-        &__info-icon {
-          position: absolute;
-          display: flex;
-          right: 0;
-          bottom: 0;
-          &:hover {
-            background-color: $black;
-            cursor: default;
-          }
+          gap: 2.4rem;
         }
       }
       &-btns {
-        display: flex;
-        gap: 4rem;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+        flex-direction: column;
+        gap: 4.8rem;
+        margin-top: 3rem;
+        margin-bottom: 4.8rem;
+        & .product__cost-btn {
+          width: fit-content;
+        }
       }
       &-links {
         display: flex;
-        gap: 1.6rem;
+        justify-content: space-between;
+        margin-bottom: 20rem;
       }
     }
   }
