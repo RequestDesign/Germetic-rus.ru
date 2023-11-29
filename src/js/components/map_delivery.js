@@ -6,11 +6,18 @@ const mapDelivery = () => {
           zoom: 17,
         });
 
+        const isWideScreen = window.innerWidth > 768;
+
+        // Выбираем соответствующий путь к изображению
+        const iconImageHref = isWideScreen
+            ? './assets/images/baloon1.webp'
+            : './assets/images/baloon.webp';
+
         let placemark = new ymaps.Placemark( [55.84956882425105,37.677268005525036], {
           balloonContent: `
           <div class="baloon">
           <div class="baloon__img-box">
-            <img src="./assets/images/baloon.webp" alt="" />
+            <img src="${iconImageHref}" alt="" />
           </div>
           <div class="baloon__info-box">
             <p class="baloon__info-title text-sm">Адрес</p>
