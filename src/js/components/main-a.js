@@ -44,6 +44,8 @@ $(function () {
   }
 })
 
+//product card//
+
 $('.product__summary-size').on('click', function () {
   if(!$(this).hasClass('active')) {
     $('.product__summary-size').removeClass('active');
@@ -185,9 +187,10 @@ $(document).on('click', function(event) {
 });
 
 //modals//
-
+let scrollToY = 0;
 function openModal() {
-  scrollY = window.scrollY;
+  console.log('www');
+  scrollToY = window.scrollY;
   const body = document.body;
   body.style.height = "100vh";
   body.style.overflowY = "hidden";
@@ -197,6 +200,11 @@ function openModal() {
 }
 
 export default openModal;
+
+$('#modal-bill').on('click', function () {
+  $(".modal.form-bill").addClass("active");
+  openModal();
+})
 
 function closeModal() {
   const body = document.body;
@@ -210,13 +218,8 @@ function closeModal() {
     null,
     window.location.pathname + window.location.search,
   );
-  window.scrollTo(0, scrollY);
+  window.scrollTo(0, scrollToY);
 }
-
-$('#modal-bill').on('click', function () {
-  $(".modal.form-bill").addClass("active");
-  openModal();
-})
 
 if ($(".modal__close").length) {
   $(".modal__close").on("click", function () {
@@ -266,4 +269,3 @@ const slider = new Swiper('.product__tabs', {
     },
   }
 });
-
