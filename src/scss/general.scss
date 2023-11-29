@@ -253,4 +253,18 @@ height: 100%;
   .text-sm {
     font-size: 2.8rem;
   }
+
+
+  .swiper-button-prev.btn-swiper,
+  .swiper-button-next.btn-swiper {
+    width: 12rem;
+    height: 12rem;
+
+    & .btn-swiper__svg-box {
+      width: 4rem;
+      height: 3rem;
+    
+    }
+  }
+
 }
