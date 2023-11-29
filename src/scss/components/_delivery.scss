@@ -46,7 +46,7 @@
   &__content-block--map {
     grid-column: 2/4;
     padding: 0;
-    & div {
+    & #map {
       width: 100%;; height: 100%;
     }
   }
