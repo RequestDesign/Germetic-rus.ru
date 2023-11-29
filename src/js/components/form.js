@@ -1,4 +1,6 @@
 import IMask from 'imask';
+var $ = require('jquery');
+import openModal from './main-a';
 
 const form = () => {
     const form = document.querySelector('.form__form');
@@ -17,7 +19,13 @@ const form = () => {
         }
 
         if (validateName(name)) {
-            form.submit();
+            // form.submit();
+            $.ajax();
+            if (form.closest('.modal')) {
+                form.closest('.modal').classList.remove("active");
+            }
+            $(".modal.success").addClass("active");
+            openModal();
         }
     });
 

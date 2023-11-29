@@ -17,16 +17,16 @@ const swiperPopularGoods = () => {
 
 
 
-        // breakpoints: {
-        //     1170: {
-        //         slidesPerView: '3',
-        //         spaceBetween: 20,
-        //     },
-        //     700: {
-        //         slidesPerView: '2',
-        //         spaceBetween: 30,
-        //     },
-        // },
+        breakpoints: {
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            210: {
+                slidesPerView: 1,
+                spaceBetween: 1,
+            },
+        },
     });
 
 

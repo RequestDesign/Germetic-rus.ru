@@ -21,6 +21,7 @@ const entryPoints = {
   about_company: path.resolve(__dirname, "src", "index.js"),
   card_product: path.resolve(__dirname, "src", "index.js"),
   contacts: path.resolve(__dirname, "src", "index.js"),
+  "prices-poliuretanovie": path.resolve(__dirname, "src", "index.js"),
 };
 
 // Создаем экземпляры HtmlWebpackPlugin для каждой страницы
