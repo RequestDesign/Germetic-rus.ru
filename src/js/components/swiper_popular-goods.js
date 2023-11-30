@@ -19,12 +19,8 @@ const swiperPopularGoods = () => {
 
         breakpoints: {
             768: {
-                slidesPerView: 4,
+                slidesPerView: '4',
                 spaceBetween: 20,
-            },
-            210: {
-                slidesPerView: 1,
-                spaceBetween: 1,
             },
         },
     });
