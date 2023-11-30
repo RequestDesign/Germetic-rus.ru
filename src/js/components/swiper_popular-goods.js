@@ -5,7 +5,7 @@ import 'swiper/css/bundle';
 
 const swiperPopularGoods = () => {
     const swiperOne = new Swiper('.popular-goods__swiper', {
-        slidesPerView: '4',
+        slidesPerView: '1',
         spaceBetween: 20,
         grabCursor: true,
         updateOnWindowResize: true,
@@ -17,16 +17,12 @@ const swiperPopularGoods = () => {
 
 
 
-        // breakpoints: {
-        //     1170: {
-        //         slidesPerView: '3',
-        //         spaceBetween: 20,
-        //     },
-        //     700: {
-        //         slidesPerView: '2',
-        //         spaceBetween: 30,
-        //     },
-        // },
+        breakpoints: {
+            768: {
+                slidesPerView: '4',
+                spaceBetween: 20,
+            },
+        },
     });
 
 
