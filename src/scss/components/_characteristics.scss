@@ -17,6 +17,7 @@
         flex-direction: column;
         gap: 3.2rem;
         background-color: $light-grey;
+        justify-content: space-between;
 
         &--snowflake {
             background: url(./assets/images/characteristics_item_bg.webp) no-repeat top/cover;;

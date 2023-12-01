@@ -69,11 +69,15 @@
    
     &:hover img{
       filter: grayscale(0);
+      -webkit-filter: grayscale(0);
+      will-change: contents;
     }
 
     & img {
       filter: grayscale(1);
+      -webkit-filter: grayscale(1);
     transition: filter 0.3s;
+
     }
   }
 
