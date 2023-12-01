@@ -191,7 +191,6 @@
     &__swiper-box {
       flex-grow: 1;
       position: relative;
-
     }
 
     // .hero__swiper
@@ -235,22 +234,23 @@
 
         & .custom-bullet-active-prev {
           order: 3;
-
+          font-family: "Inter";
           &::after {
-            left:  -3.3rem;
+            left: -3.3rem;
             right: -1.2rem;
           }
         }
-    
+
         & .custom-bullet-active {
           order: 1;
+          font-family: "Inter";
 
           &::after {
             right: -3.3rem;
             left: -1.2rem;
           }
         }
-    
+
         & .custom-bullet-active-next {
           order: 2;
           font-size: 6.8rem;
@@ -261,7 +261,7 @@
             width: 12.4rem;
             height: 0.4rem;
             right: -0.2rem;
-            left:  -0.2rem;
+            left: -0.2rem;
             background-color: $black;
           }
         }
@@ -286,14 +286,11 @@
     }
 
     &__swiper-button-box {
-
       position: absolute;
       bottom: 4.8rem;
-justify-content: space-between;
-left: 0;
-right: 0;
-
-
+      justify-content: space-between;
+      left: 0;
+      right: 0;
 
       // position: relative;
       // display: flex;
@@ -305,13 +302,11 @@ right: 0;
       // }
     }
 
-    &__swiper-pagination  .hero__swiper-button-prev,
-    &__swiper-pagination  .hero__swiper-button-next {
-
+    &__swiper-pagination .hero__swiper-button-prev,
+    &__swiper-pagination .hero__swiper-button-next {
     }
 
     &__swiper-button-prev {
-      
     }
 
     // .hero__swiper-button-next
