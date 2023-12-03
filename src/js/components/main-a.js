@@ -56,9 +56,11 @@ $('.product__summary-size').on('click', function () {
 })
 
 $('.product__summary-color').on('click', function () {
+  const color = $(this).css('background-color');
   if(!$(this).hasClass('active')) {
     $('.product__summary-color').removeClass('active');
     $(this).addClass('active');
+    $(this).css('border-color', color);
   }
 })
 

@@ -106,7 +106,6 @@ body {
   line-height: normal;
   overflow: hidden;
   gap: 0.8rem;
-  // border: 1px solid $black;
   border-radius: 100px;
   width: fit-content;
   &::after {
@@ -184,14 +183,23 @@ white-space: nowrap;
 }
 
 .btn-link {
+  width: fit-content;
   font-family: 'Inter';
   font-size: 1.4rem;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
-  border-bottom: 0.1rem solid $black;
-  &:hover {
-    border-bottom: 0;
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    margin-top: 0.2rem;
+    background-color: $black;
+    transition: width 0.3s;
+  }
+  &:hover:after {
+    width: 0%;
   }
 }
 
