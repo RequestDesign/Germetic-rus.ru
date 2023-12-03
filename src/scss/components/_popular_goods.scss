@@ -237,6 +237,60 @@
     display: none;
   }
 
+  // .popular-goods {
+  //   padding: 8rem 0;
+  //   &__header {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: space-between;
+  //     margin-bottom: 4.7rem;
+  //   }
+  //   &__swiper-button-prev.swiper-button-prev,
+  //   &__swiper-button-next.swiper-button-next {
+  //     top: unset;
+  //     bottom: 0;
+  //   }
+  //   &__swiper-button-prev.swiper-button-prev {
+  //     left: 40%;
+  //     transform: translateX(-50%);
+  //   }
+  //   &__swiper-button-next.swiper-button-next {
+  //     right: 40%;
+  //     transform: translateX(50%);
+  //   }
+  //   &__swiper-box {
+  //     padding-bottom: 16rem;
+  //   }
+  //   &__card {
+  //     padding: 4rem;
+  //     height: 73.4rem;
+  //   }
+  //   &__card-img-box {
+  //     width: 55.5rem;
+  //     height: 44rem;
+  //     margin-bottom: 4rem;
+  //     & img {
+  //       height: 100%;
+  //       object-fit: cover;
+  //     }
+  //   }
+  //   &__card-title {
+  //     font-size: 3.2rem;
+  //     margin-bottom: 4.8rem;
+  //   }
+  //   &__card-price-box {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //   }
+  //   &__card-price-wrapper {
+  //     display: flex;
+  //     &--wholesale {
+  //       font-size: 3.2rem;
+  //     }
+  //   }
+  // }
+
   .popular-goods {
     padding: 10rem 0;
     // .popular-goods__content-inner
