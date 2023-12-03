@@ -32,6 +32,9 @@
     margin: 0 auto;
     align-items: center;
     padding: 2.3rem 0;
+    &-burger {
+      display: none;
+    }
     &-image {
       width: 11.2rem;
       margin-right: 2.4rem;
@@ -64,6 +67,13 @@
       &-wrap {
         display: flex;
         gap: 1.6rem;
+        & div.header__top-contacts-icon {
+          width: 5.6rem;
+          height: 5.6rem;
+        }
+        & a.header__top-contacts-icon {
+          display: none;
+        }
       }
       &-tel {
         font-family: 'Inter';
@@ -74,10 +84,6 @@
       }
       &-mail {
         color: $grey;
-      }
-      &-icon {
-        width: 5.6rem;
-        height: 5.6rem;
       }
     }
   }
@@ -375,7 +381,7 @@
     position: relative;
     width: 100%;
     &::before {
-      top: 16.8rem;
+      top: 50%;
       height: 0.2rem;
     }
     &.modal-search {
@@ -395,6 +401,34 @@
     &__top {
       width: 100%;
       padding: 3.9rem 4rem 3.1rem;
+      &-burger {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+        margin-right: 18rem;
+        & span {
+          display: block;
+          width: 4.2rem;
+          height: 0.4rem;
+          background-color: $black;
+          border-radius: 10rem;
+          transition: transform 0.2s linear;
+        }
+        &.active {
+          & span:nth-child(2) {
+            display: none;
+          }
+          & span:first-child {
+            transform-origin: center;
+            transform: translateY(0.65rem) rotate(45deg);
+          }
+          & span:last-child {
+            transform-origin: center;
+            transform: translateY(-0.65rem) rotate(45deg);
+          }
+        }
+      }
       &-image {
         width: 20.4rem;
         margin-right: 6rem;
@@ -421,6 +455,18 @@
         &-wrap {
           display: flex;
           gap: 1.6rem;
+          & div.header__top-contacts-icon {
+            display: none;
+          }
+          & a.header__top-contacts-icon {
+            display: flex;
+            width: 7.2rem;
+            height: 7.2rem;
+            & img {
+              width: 3.2rem;
+              height: 3.2rem;
+            }
+          }
         }
         &-tel {
           font-family: 'Inter';
@@ -431,10 +477,6 @@
         }
         &-mail {
           color: $grey;
-        }
-        &-icon {
-          width: 5.6rem;
-          height: 5.6rem;
         }
       }
     }

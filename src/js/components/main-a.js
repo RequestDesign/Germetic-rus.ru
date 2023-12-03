@@ -216,13 +216,23 @@ if ($(".modal__close").length) {
 }
 
 document.addEventListener("click", (el) => {
-  if ($(".modal.success").hasClass("active")) {
-    const md = document.querySelector(".modal.success");
+  if ($(".modal.success-application").hasClass("active")) {
+    const md = document.querySelector(".modal.success-application");
     const wrap = document.querySelector(".modal__wrapper");
     const notWrap = el.composedPath().includes(wrap);
     const window = el.composedPath().includes(md);
     if (window && !notWrap) {
-      $(".modal.success").removeClass("active");
+      $(".modal.success-application").removeClass("active");
+      closeModal();
+    }
+  }
+  if ($(".modal.success-purchase").hasClass("active")) {
+    const md = document.querySelector(".modal.success-purchase");
+    const wrap = document.querySelector(".modal__wrapper");
+    const notWrap = el.composedPath().includes(wrap);
+    const window = el.composedPath().includes(md);
+    if (window && !notWrap) {
+      $(".modal.success-purchase").removeClass("active");
       closeModal();
     }
   }

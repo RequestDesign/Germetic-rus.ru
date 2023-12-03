@@ -95,21 +95,44 @@ body {
 }
 
 .button {
+  position: relative;
+  z-index: 0;
   display: flex;
   align-items: center;
-  background-color: $black;
   color: $white;
   font-family: "Inter";
   font-size: 1.6rem;
   font-weight: 400;
   line-height: normal;
+  overflow: hidden;
   gap: 0.8rem;
   // border: 1px solid $black;
   border-radius: 100px;
   width: fit-content;
-  transition: background-color 0.3s;
-  &:hover {
-    background-color: $red;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    background-color: $black;
+    transition: transform 0.5s ease;
+  }
+  &::before {
+    content:'';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $red;
+    border-radius: 10rem;
+  }
+  &:hover:after {
+    transform: translateX(100%);
   }
 }
 
@@ -140,6 +163,8 @@ body {
 }
 
 .button__arr {
+  position: relative;
+  z-index: 1;
   padding: 1.8rem 4rem;
   display: flex;
   align-items: center;
