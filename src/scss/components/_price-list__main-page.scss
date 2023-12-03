@@ -1,46 +1,100 @@
 .price-list {
-padding: 8rem 0;
+  padding: 8rem 0;
+  // .price-list__inner
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 5.6rem 5.6rem 12.6rem;
+    background: url(./assets/images/price_list_main_bg.webp) no-repeat top/cover;
+  }
+
+  // .price-list__desk
+
+  &__desk {
+    font-family: "Inter";
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  // .price-list__header-box
+
+  &__header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+  }
+
+  // .price-list__title
+
+  &__title {
+  }
+
+  // .price-list__button
+
+  &__button {
+  }
+
+  // .price-list__button-svg-box
+
+  &__button-svg-box {
+  }
+}
+
+@media (max-width: 48em) {
+  .price-list {
+    padding: 10rem 0;
     // .price-list__inner
 
     &__inner {
-        display: flex;
-        flex-direction: column;
-        gap: 5rem;
-        padding: 5.6rem 5.6rem 12.6rem;
-        background: url(./assets/images/price_list_main_bg.webp) no-repeat top/cover;
+      gap: 4rem;
+      padding:6.4rem 4rem;
     }
 
     // .price-list__desk
 
     &__desk {
-        font-family: 'Inter';
-font-size: 2rem;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.3px;
     }
 
     // .price-list__header-box
 
     &__header-box {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 8rem;
     }
 
     // .price-list__title
 
     &__title {
+      font-size: 4.6rem;
     }
 
     // .price-list__button
 
     &__button {
+      padding: 3.6rem 8rem;
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+      gap: 3.2rem;
     }
 
     // .price-list__button-svg-box
 
     &__button-svg-box {
+      width: 3.2rem;
+      height: 2.4rem;
     }
+  }
 }

@@ -9,7 +9,7 @@ const swiperHeroMain = () => {
 
     const swiperOne = new Swiper(swiperContainer, {
         slidesPerView: 1,
-        direction: 'vertical',
+        direction: 'horizontal',
         loop: true,
         grabCursor: true,
         updateOnWindowResize: true,
@@ -33,6 +33,12 @@ const swiperHeroMain = () => {
             },
             slideChange: function () {
                 updatePagination(this);
+            },
+        },
+
+        breakpoints: {
+            768: {
+                direction: 'vertical',
             },
         },
     });
@@ -72,6 +78,8 @@ const swiperHeroMain = () => {
     function pad(number) {
         return (number < 10) ? '0' + number : number;
     }
+
+
 }
 
 export default swiperHeroMain;
