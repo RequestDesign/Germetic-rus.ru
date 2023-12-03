@@ -123,6 +123,10 @@
 
 /*! ./assets/images/icons/large.svg */
 
+/*! ./assets/images/modal-success.webp */
+
+/*! ./assets/images/price-list-bg.webp */
+
 /*! ./assets/images/price_list_main_bg.webp */
 
 /*! ./base.js */
@@ -168,6 +172,8 @@
 /*! ./js/components/mainKuloverova */
 
 /*! ./js/utils/constants */
+
+/*! ./main-a */
 
 /*! ./map_delivery */
 
@@ -403,6 +409,14 @@
 
 /*!**********************************************!*\
   !*** ./src/assets/images/about_hero_bg.webp ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./src/assets/images/modal-success.webp ***!
+  \**********************************************/
+
+/*!**********************************************!*\
+  !*** ./src/assets/images/price-list-bg.webp ***!
   \**********************************************/
 
 /*!***********************************************!*\
