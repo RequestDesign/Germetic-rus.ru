@@ -32,7 +32,7 @@ const mapDelivery = () => {
           `
         }, {
             iconLayout: 'default#image',
-            iconImageHref: './assets/images/icons/placemark.svg',
+            iconImageHref: './assets/images/placemark.svg',
             iconImageSize: [90, 90],
             iconImageOffset: [-45, -65],
         })
