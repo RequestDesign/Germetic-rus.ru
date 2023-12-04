@@ -20,9 +20,15 @@ const fancyapps = () => {
       backFocus: false, // Предотвращает автоматическое фокусирование на кнопке "Назад" после закрытия
       // Пользовательские стили для фона и фильтра
       btnTpl: {
-        slideShow: '<button data-fancybox-play class="fancybox-button fancybox-button--play" title="{{PLAY_START}}"></button>',
-        thumbs: '<button data-fancybox-thumbs class="fancybox-button fancybox-button--thumbs" title="{{THUMBS}}"></button>',
-        close: '<button data-fancybox-close class="fancybox-button fancybox-button--close" title="{{CLOSE}}"></button>',
+        slideShow: '',
+        thumbs: '',
+        close: `<button data-fancybox-close class="fancybox-button--close swiper-button-prev btn-swiper"  title="{{CLOSE}}">
+        <div class="btn-swiper__svg-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4L12 12M20 20L12 12M12 12L20 4M12 12L4 20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        </button>`,
         arrowLeft:
           `<button data-fancybox-prev class=" fancybox-button--arrow_left swiper-button-prev btn-swiper"  title="{{PREV}}">
             <div class="btn-swiper__svg-box">
