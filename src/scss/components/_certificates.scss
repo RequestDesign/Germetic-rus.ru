@@ -1,0 +1,183 @@
+.certificates {
+  padding: 8rem 0;
+  display: none;
+  // .certificates__content-inner
+
+  &__content-inner {
+  }
+
+  // .certificates__header
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.7rem;
+  }
+
+  &__swiper-pagination {
+    display: none;
+  }
+
+  &__swiper-button-prev.swiper-button-prev,
+  &__swiper-button-next.swiper-button-next {
+    @include swiper-btn-top;
+  }
+
+  &__swiper-button-prev.swiper-button-prev {
+    @include swiper-btn-prev-top;
+  }
+
+  // .popular-goods__swiper-button-next
+
+  &__swiper-button-next.swiper-button-next {
+    @include swiper-btn-next-top;
+  }
+
+  // .certificates__title
+
+  &__title {
+  }
+
+  // .certificates__swiper-box
+
+  &__swiper-box {
+    position: relative;
+  }
+
+  // .certificates__swiper
+
+  &__swiper {
+  }
+
+  // .certificates__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .certificates__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .certificates__card
+
+  &__card {
+  }
+
+  // .certificates__card-img-box
+
+  &__card-img-box {
+    width: 37.5rem;
+    height: 52.3rem;
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  // .certificates__swiper-button-prev
+
+  &__swiper-button-prev {
+  }
+
+  // .certificates__swiper-button--svg-box
+
+  &__swiper-button--svg-box {
+  }
+
+  // .certificates__swiper-button-next
+
+  &__swiper-button-next {
+  }
+}
+
+@media (max-width: 48em) {
+  .certificates {
+    padding: 10rem 0;
+
+    // .certificates__content-inner
+
+    &__content-inner {
+    }
+
+    // .certificates__header
+
+    &__header {
+    }
+
+    &__swiper-pagination.certificates__swiper-pagination.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+      display: flex;
+      justify-content: center;
+      bottom: 0;
+      gap: 2.4rem;
+
+      & .swiper-pagination-bullet {
+        width: 1.6rem;
+        height: 1.6rem;
+        background-color: $grey;
+      }
+      & .swiper-pagination-bullet-active {
+        background-color: $black;
+      }
+    }
+
+    &__swiper-button-prev.swiper-button-prev,
+    &__swiper-button-next.swiper-button-next {
+      display: none;
+    }
+
+    // .certificates__title
+
+    &__title {
+    }
+
+    // .certificates__swiper-box
+
+    &__swiper-box {
+      margin-right: -15px;
+      padding-bottom: 5.6rem;
+    }
+
+    // .certificates__swiper
+
+    &__swiper {
+    }
+
+    // .certificates__swiper-wrapper
+
+    &__swiper-wrapper {
+    }
+
+    // .certificates__swiper-slide
+
+    &__swiper-slide {
+    }
+
+    // .certificates__card
+
+    &__card {
+    }
+
+    // .certificates__card-img-box
+
+    &__card-img-box {
+      width: 56rem;
+      height: 78rem;
+    }
+
+    // .certificates__swiper-button-prev
+
+    &__swiper-button-prev {
+    }
+
+    // .certificates__swiper-button--svg-box
+
+    &__swiper-button--svg-box {
+    }
+
+    // .certificates__swiper-button-next
+
+    &__swiper-button-next {
+    }
+  }
+}

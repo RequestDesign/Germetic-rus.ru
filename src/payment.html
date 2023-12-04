@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оплата и доставка</title>
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=ffac2b37-9f44-43d8-8e3e-92f15073c2d1"
+    ></script>
+  </head>
+  <body>
+    <include src="./components/header.html"></include>
+    <main class="main main--payment">
+      <section class="payment">
+        <div class="container">
+          <div class="payment___inner">
+            <p class="payment__title title">Способы оплаты</p>
+            <ul class="payment__list">
+              <li class="payment__item">
+                <div class="payment__item-wrapper">
+                  <div class="payment__item-inner">
+                    <p class="payment__text text-sm">
+                      Безналичная оплата по счету
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment__item">
+                <div class="payment__item-wrapper">
+                  <div class="payment__item-inner">
+                    <p class="payment__text text-sm">
+                      Оплата картой через Сбербанк онлайн
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment__item">
+                <div class="payment__item-wrapper">
+                  <div class="payment__item-inner">
+                    <p class="payment__text text-sm">
+                      Оплата картой в офисе компании
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment__item">
+                <div class="payment__item-wrapper">
+                  <div class="payment__item-inner">
+                    <p class="payment__text text-sm">
+                      Оплата наличными в офисе компании
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="payment__item">
+                <a href="#" class="payment__item-wrapper payment__item--link">
+                  <div class="payment__item-inner">
+                    <p class="payment__text text-sm">
+                      Заказать счет <br />на оплату info@germetic-rus.ru
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+  
+      <section class="delivery">
+        <div class="container">
+          <div class="delivery__inner">
+            <p class="delivery__title title">Способы получения товара</p>
+            <div class="delivery__content-wrapper">
+              <div class="delivery__content-block delivery__content-block--rus">
+                <p class="delivery__content-title">
+                  Доставка
+                  <br />
+                  по РОССИИ
+                </p>
+                <div class="delivery__content-text-block">
+                  <p class="delivery__content-text text-sm">
+                    По условиям доставки обращайтесь к нашим менеджерам.
+                  </p>
+                  <p class="delivery__content-text text-sm">
+                    Доставка продукции производится через транспортные компании
+                    Байкал-Сервис, Деловые линии
+                  </p>
+                </div>
+  
+                <a href="tel:+79175666551"
+                  class="delivery__content-text delivery__content-text--tel text-sm"
+                >
+                  Телефон: +7(917) 566-65-51
+                </a>
+                <div class="delivery__content-companies">
+                  <div class="delivery__content-company">
+                    <div
+                      class="delivery__content-company-img-box delivery__content-company-img-box--baikal"
+                    >
+                      <img
+                        src="./assets/images/icons/company_1.svg"
+                        alt="Байкал-Сервис"
+                      />
+                    </div>
+                    <p class="delivery__content-company-title text-sm">
+                      Байкал-Сервис
+                    </p>
+                  </div>
+                  <div class="delivery__content-company">
+                    <div
+                      class="delivery__content-company-img-box delivery__content-company-img-box--line"
+                    >
+                      <img
+                        src="./assets/images/icons/company_2.svg"
+                        alt=" Деловые линии"
+                      />
+                    </div>
+                    <p class="delivery__content-company-title text-sm">
+                      Деловые линии
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="delivery__content-block delivery__content-block--msk">
+                <p class="delivery__content-title">
+                  Доставка по Москве
+                  <br />
+                  и Московской области
+                </p>
+  
+                <ul class="delivery__content-list">
+                  <li class="delivery__content-item">
+                    <p class="delivery__content-text text-sm">
+                      Стоимость доставки от 500 руб. может изменяться в
+                      зависимости от расстояния и объема поставки.
+                    </p>
+                  </li>
+                  <li class="delivery__content-item">
+                    <p class="delivery__content-text text-sm">
+                      Окончательная стоимость оговаривается с менеджером после
+                      обработки заказа.
+                    </p>
+                  </li>
+                  <li class="delivery__content-item">
+                    <p class="delivery__content-text text-sm">
+                      Доставка по Москве и МО осуществляется с понедельника по
+                      субботу с 09:00 до 20:00.
+                    </p>
+                  </li>
+                  <li class="delivery__content-item">
+                    <p class="delivery__content-text text-sm">
+                      Возможность быстрой доставки в день оформления заказа
+                      уточняйте у наших менеджеров.
+                    </p>
+                  </li>
+                </ul>
+  
+                <a href="tel:+79175666551"
+                  class="delivery__content-text delivery__content-text--tel text-sm"
+                >
+                  Телефон: +7(917) 566-65-51
+                </a>
+  
+                <a
+                  href="mailto:info@germetic-rus.ru"
+                  class="delivery__content-link btn--transparent"
+                  >info@germetic-rus.ru</a
+                >
+              </div>
+              <div
+                class="delivery__content-block delivery__content-block--pickup"
+              >
+                <p class="delivery__content-title">
+                  Самовывоз заказа по адресу:
+                </p>
+                <ul class="delivery__content-adress-list">
+                  <li class="delivery__content-adress-item">
+                    <p
+                      class="delivery__content-text text-sm delivery__content-text--red"
+                    >
+                      Адрес: г. Москва ул. Красная сосна, 2, корп. 1, стр. 1, оф.
+                      555, МОСТРАНССКЛАД
+                    </p>
+                  </li>
+                  <li class="delivery__content-adress-item">
+                    <p class="delivery__content-text text-sm">Режим работы:</p>
+                    <p class="delivery__content-text text-sm">
+                      Понедельник – Пятница, с 09:00 до 16:30
+                    </p>
+                  </li>
+                  <li class="delivery__content-adress-item">
+                    <p class="delivery__content-text text-sm">Телефон:</p>
+                    <p class="delivery__content-text text-sm">
+                      8 (495) 120-23-29, 8 (985) 765-30-21
+                    </p>
+                  </li>
+                </ul>
+                <a href="#" class="delivery__content-btn button">
+                  <div class="delivery__content-btn-img-box">
+                    <img
+                      class="delivery__content-btn-img"
+                      src="./assets/images/icons/DownloadSimple.svg"
+                      alt=""
+                    />
+                  </div>
+                  Скачать схему проезда
+                </a>
+              </div>
+              <div class="delivery__content-block delivery__content-block--map">
+                <div id="map" class="deliver__map"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <include src="./components/footer.html"></include>
+
+
+
+  </body>
+</html>

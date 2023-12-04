@@ -1,0 +1,134 @@
+.baloon {
+  padding: 2.4rem;
+  display: flex;
+  gap: 1.8rem;
+  // .baloon__img-box
+
+  &__img-box {
+    width: 14rem;
+    height: 11rem;
+    & img {
+      object-fit: cover;
+    }
+  }
+
+  // .baloon__info-box
+
+  &__info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ width: 40.7rem;
+
+  }
+
+  // .baloon__info-title
+
+  &__info-title {
+    color: $grey;
+  }
+
+  // .baloon__info-desk
+
+  &__info-desk {
+    font-family: 'Inter';
+font-size: 2rem;
+font-weight: 500;
+line-height: normal;
+  }
+}
+
+[class$="balloon__content"] {
+  padding: 0 !important;;
+  width:61.3rem !important;;
+  margin-right: 0 !important;;
+  box-shadow: 2.1rem 1.8rem 6.1rem 0 rgba(173, 173, 173, 0.25) !important;;
+  
+}
+[class$="balloon__content"] > ymaps {
+  width:61.3rem !important;;
+  height: fit-content !important;
+}
+// [class$="close-button"] {
+//  display: none !important;
+// }
+[class$="balloon-overlay"] > ymaps > ymaps {
+    box-shadow: none !important;;
+    top: -20rem !important;;
+    left: -30rem !important;;
+}
+[class$="balloon-overlay"]  [class$="balloon__tail"]  {
+  left: 28.7rem;
+  top: 0;
+  box-shadow: 2.1rem 1.8rem 6.1rem 0 rgba(173, 173, 173, 0.25);
+}
+
+// [class$="-balloon "],
+// [class$="-balloon "]{
+//   padding: 0 !important;
+// }
+
+@media (max-width: 48em) {
+  .baloon {
+    padding: 4rem;
+   flex-direction: column;
+    gap: 3.2rem;
+    // .baloon__img-box
+  
+    &__img-box {
+      width: 52.6rem;
+      height: 22rem;
+
+      & img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    // .baloon__info-box
+  
+    &__info-box {
+      gap: 0.8rem;
+      width: 52.6rem;
+  
+    }
+  
+    // .baloon__info-title
+  
+    &__info-title {
+      color: $grey;
+    }
+  
+    // .baloon__info-desk
+  
+    &__info-desk {
+      font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    }
+  }
+
+  [class$="balloon__content"] {
+    width:fit-content !important;;
+  }
+  [class$="balloon__content"] > ymaps {
+    width:fit-content !important;;
+    height: fit-content !important;
+  }
+  [class$="close-button"] {
+   width: 3rem !important;
+   height:  3rem !important;
+   margin: 1rem;
+  }
+  [class$="balloon-overlay"] > ymaps > ymaps {
+      top: -55rem !important;;
+      left: -31.5rem !important;;
+  }
+  [class$="balloon-overlay"]  [class$="balloon__tail"]  {
+    left: 28.7rem;
+    top: 0;
+    box-shadow: 2.1rem 1.8rem 6.1rem 0 rgba(173, 173, 173, 0.25);
+  }
+}

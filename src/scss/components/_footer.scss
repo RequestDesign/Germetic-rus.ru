@@ -1,0 +1,130 @@
+.footer {
+  &__top {
+    position: relative;
+    width: 100%;
+    padding: 5.6rem 0;
+    display: flex;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 0.1rem;
+      background-color: $grey;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+  }
+  width: 100%;
+  &__logo {
+    width: 11.2rem;
+    height: 5.2rem;
+    margin-right: 15.1rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__nav {
+    display: flex;
+    &-list {
+      margin-right: 22.9rem;
+      &:first-child {
+        margin-right: 11.3rem;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &-title {
+        margin-bottom: 2.4rem;
+      }
+      & ul {
+        display: flex;
+        gap: 1.6rem;
+        flex-direction: column;
+      }
+    }
+  }
+  &__bottom {
+    padding: 3.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    &-text {
+      color: $grey;
+    }
+    &-logo {
+      width: 18.5rem;
+      margin-top: -2rem;
+      margin-bottom: -2.5rem;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .footer {
+    &__top {
+      flex-direction: column;
+      padding: 8rem 0;
+      &::before,
+      &::after {
+        height: 0.2rem;
+      }
+    }
+    width: 100%;
+    &__logo {
+      width: 20.4rem;
+      height: fit-content;
+      margin-right: 0;
+      margin-bottom: 8rem;
+    }
+    &__nav {
+      flex-direction: row;
+      row-gap: 8rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &-list {
+        margin-right: 0;
+
+        &-title {
+          margin-bottom: 4.8rem;
+        }
+        & ul {
+          display: flex;
+          gap: 2.4rem;
+          flex-direction: column;
+        }
+        &:first-child {
+          margin-right: 0;
+        }
+        &:not(:first-child) {
+          & .title-s {
+            font-size: 3.2rem;
+          }
+        }
+      }
+    }
+    &__bottom {
+      padding: 6.4rem 0;
+      text-align: left;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 3rem;
+      &-logo {
+        width: 37rem;
+      }
+    }
+  }
+}

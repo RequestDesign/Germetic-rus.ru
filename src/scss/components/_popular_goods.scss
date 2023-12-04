@@ -1,0 +1,461 @@
+.popular-goods {
+  padding: 8rem 0;
+  // .popular-goods__content-inner
+
+  &__content-inner {
+  }
+
+  // .popular-goods__header
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.7rem;
+  }
+
+  // .popular-goods__title
+
+  &__title {
+  }
+
+  &__header-btn {
+    display: none;
+  }
+  // .popular-goods__swiper-button-prev
+
+  &__swiper-button-prev.swiper-button-prev,
+  &__swiper-button-next.swiper-button-next {
+    @include swiper-btn-top;
+  }
+
+  &__swiper-button-prev.swiper-button-prev {
+    @include swiper-btn-prev-top;
+  }
+
+  // .popular-goods__swiper-button-next
+
+  &__swiper-button-next.swiper-button-next {
+    @include swiper-btn-next-top;
+  }
+
+  // .popular-goods__swiper
+
+  &__swiper {
+  }
+
+  &__swiper-box {
+    position: relative;
+  }
+
+  // .popular-goods__swiper-wrapper
+
+  &__swiper-wrapper {
+  }
+
+  // .popular-goods__swiper-slide
+
+  &__swiper-slide {
+  }
+
+  // .popular-goods__card-link
+
+  &__card-link {
+  }
+
+  // .popular-goods__card
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 3rem;
+    background-color: $light-grey;
+    height: 45.8rem;
+
+    &:hover {
+      // .popular-goods__article-btn
+
+      & .popular-goods__card-btn {
+        margin-top: 0;
+      }
+      & .popular-goods__card-img-box {
+        width: 24rem;
+        height: 24rem;
+      }
+    }
+  }
+
+  // .popular-goods__card-img-box
+
+  &__card-img-box {
+    width: 31rem;
+    height: 31rem;
+    transition: width 0.3s, height 0.3s;
+    align-self: center;
+    margin-bottom: 2.4rem;
+    & img {
+      object-fit: contain;
+    }
+  }
+
+  // .popular-goods__card-content
+
+  &__card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  // .popular-goods__card-title
+
+  &__card-title {
+    font-family: "Inter";
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Максимальное количество строк */
+    -webkit-box-orient: vertical;
+    font-size: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 1rem;
+  }
+
+  // .popular-goods__card-price-box
+
+  &__card-price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .popular-goods__card-price-wrapper
+
+  &__card-price-wrapper {
+    display: flex;
+
+    &--wholesale {
+      font-family: "Inter";
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+
+      & span {
+        color: $red;
+      }
+    }
+  }
+
+  // .popular-goods__card-price
+
+  &__card-price {
+  }
+
+  // .popular-goods__card-price-num
+
+  &__card-price-num {
+  }
+
+  // .popular-goods__card-price-text
+
+  &__card-price-text {
+  }
+
+  // .popular-goods__card-wholesale-text
+
+  &__card-wholesale-text {
+  }
+
+  // .popular-goods__card-price--wholesale
+
+  &__card-price {
+  }
+
+  // .popular-goods__card-btn
+
+  &__card-btn {
+    transition: background-color 0.3s, margin-top 0.3s;
+    margin-top: 1.5rem;
+    margin-bottom: 2.4rem;
+    display: block;
+    width: 100%;
+    padding: 1.8rem 3.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  //.popular-goods__card-btn
+
+  &__card-btn-svg-box {
+    & svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+}
+
+.main--main-page {
+  // .popular-goods__swiper-button-prev
+
+  .popular-goods__swiper-button-prev.swiper-button-prev,
+  .popular-goods__swiper-button-next.swiper-button-next {
+    @include swiper-btn-midle;
+    transform: translateY(-50%);
+
+    &.swiper-button-disabled {
+      opacity: 0;
+    }
+  }
+
+  .popular-goods__swiper-button-prev {
+    @include swiper-btn-prev-midle;
+  }
+  // .popular-goods__swiper-button-next
+
+  .popular-goods__swiper-button-next {
+    @include swiper-btn-next-midle;
+  }
+
+  .popular-goods__header-btn {
+    display: flex;
+  }
+}
+
+.main--article {
+  .popular-goods {
+    padding: 8rem 0 16rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .main--article .popular-goods {
+    display: none;
+  }
+
+  // .popular-goods {
+  //   padding: 8rem 0;
+  //   &__header {
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: space-between;
+  //     margin-bottom: 4.7rem;
+  //   }
+  //   &__swiper-button-prev.swiper-button-prev,
+  //   &__swiper-button-next.swiper-button-next {
+  //     top: unset;
+  //     bottom: 0;
+  //   }
+  //   &__swiper-button-prev.swiper-button-prev {
+  //     left: 40%;
+  //     transform: translateX(-50%);
+  //   }
+  //   &__swiper-button-next.swiper-button-next {
+  //     right: 40%;
+  //     transform: translateX(50%);
+  //   }
+  //   &__swiper-box {
+  //     padding-bottom: 16rem;
+  //   }
+  //   &__card {
+  //     padding: 4rem;
+  //     height: 73.4rem;
+  //   }
+  //   &__card-img-box {
+  //     width: 55.5rem;
+  //     height: 44rem;
+  //     margin-bottom: 4rem;
+  //     & img {
+  //       height: 100%;
+  //       object-fit: cover;
+  //     }
+  //   }
+  //   &__card-title {
+  //     font-size: 3.2rem;
+  //     margin-bottom: 4.8rem;
+  //   }
+  //   &__card-price-box {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //   }
+  //   &__card-price-wrapper {
+  //     display: flex;
+  //     &--wholesale {
+  //       font-size: 3.2rem;
+  //     }
+  //   }
+  // }
+
+  .popular-goods {
+    padding: 10rem 0;
+    // .popular-goods__content-inner
+
+    &__content-inner {
+    }
+
+    // .popular-goods__header
+
+    &__header {
+      margin-bottom: 4.8rem;
+    }
+
+    // .popular-goods__title
+
+    &__title {
+    }
+
+    &__header-btn.button.button__arr {
+      display: none;
+    }
+    // .popular-goods__swiper-button-prev
+
+    & .popular-goods__swiper-button-prev.swiper-button-prev,
+    & .popular-goods__swiper-button-next.swiper-button-next {
+      top: 100%;
+      width: 12rem;
+      height: 12rem;
+      transform: translateY(-100%);
+
+      &.swiper-button-disabled {
+        opacity: 0.5;
+      }
+
+      &.swiper-button-prev{
+        left: 21rem;
+      }
+
+      &.swiper-button-next {
+        right: 21rem;
+      }
+    }
+      // .popular-goods__swiper
+
+      &__swiper {
+      }
+
+      &__swiper-box {
+        padding-bottom: 16rem;
+      }
+
+      // .popular-goods__swiper-wrapper
+
+      &__swiper-wrapper {
+      }
+
+      // .popular-goods__swiper-slide
+
+      &__swiper-slide {
+      }
+
+      // .popular-goods__card-link
+
+      &__card-link {
+      }
+
+      // .popular-goods__card
+
+      &__card {
+        padding: 4rem 4rem 4.4rem;
+        height: 73.4rem;
+
+        &:hover {
+          // .popular-goods__article-btn
+          & .popular-goods__card-img-box {
+            width: 50.6rem;
+            height: 40.8rem;
+          }
+        }
+      }
+
+      // .popular-goods__card-img-box
+
+      &__card-img-box {
+        width: 50.6rem;
+        height: 40.8rem;
+        margin-bottom: 5.2rem;
+      }
+
+      // .popular-goods__card-content
+
+      &__card-content {
+        gap: 4rem;
+      }
+
+      // .popular-goods__card-title
+
+      &__card-title {
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.32px;
+      }
+
+      // .popular-goods__card-price-box
+
+      &__card-price-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      // .popular-goods__card-price-wrapper
+
+      &__card-price-wrapper {
+        display: flex;
+
+        &--wholesale {
+          font-size: 3.2rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.32px;
+
+        }
+      }
+
+      // .popular-goods__card-price
+
+      &__card-price {
+      }
+
+      // .popular-goods__card-price-num
+
+      &__card-price-num {
+      }
+
+      // .popular-goods__card-price-text
+
+      &__card-price-text {
+      }
+
+      // .popular-goods__card-wholesale-text
+
+      &__card-wholesale-text {
+      }
+
+      // .popular-goods__card-price--wholesale
+
+      &__card-price {
+      }
+
+      // .popular-goods__card-btn
+
+      &__card-btn {
+display: none;
+      }
+
+      //.popular-goods__card-btn
+
+      &__card-btn-svg-box {
+
+      }
+    }
+  }
+
