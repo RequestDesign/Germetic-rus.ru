@@ -68,6 +68,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    &.catalog-form {
+      background: url(./assets/images/modal-success.webp) no-repeat top/cover;
+    }
   }
 
   // .form__content-row
@@ -124,6 +127,16 @@
 
   &__link {
     text-transform: none;
+  }
+}
+
+.catalog-form {
+  .form__input-box {
+    gap: 3.2rem 5.6rem;
+  }
+  .form__btn {
+    padding: 1.9rem 4rem;
+    margin-top: -2rem;
   }
 }
 

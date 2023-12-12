@@ -1,5 +1,6 @@
 'use strict';
 import Swiper from 'swiper/bundle';
+import selectize from '@selectize/selectize';
 var $ = require('jquery');
 const rem = function (rem) {
   if (window.innerWidth > 768) {
@@ -9,6 +10,17 @@ const rem = function (rem) {
     return (100 / 375) * (0.05 * window.innerWidth) * rem;
   }
 }
+
+$(function () {
+  if ($('.form__select')) {
+    $('.form__select[name="type"]').selectize({
+      placeholder: 'Тип',
+    });
+    $('.form__select[name="color"]').selectize({
+      placeholder: 'Цвет',
+    });
+  }
+})
 
 //dropdown
 let timer;
@@ -76,6 +88,168 @@ $(function () {
         $('.header__top-nav').slideUp();
         openModal();
       })
+  }
+  if ($('.catalog__list-sort.dropdown')) {
+    $('.catalog__dropdown').hide()
+    $('.catalog__list-sort span').on('click', function () {
+      $('.catalog__dropdown').slideToggle();
+    })
+  }
+})
+
+//catalog//
+
+$(function () {
+  $('.catalog__sort').hide()
+  if ($('.catalog__categories .payment__item').hasClass('active')) {
+    const data = $('.catalog__categories .payment__item').attr('data-tab');
+    $(`.catalog__sort[data-tab="${data}"]`).show();
+  }
+  $('.catalog__categories .payment__item').on('click', function () {
+    $('.catalog__categories .payment__item').removeClass('active');
+    $(this).addClass('active');
+    $('.catalog__sort').hide();
+    $('.catalog__sort').removeClass('active');
+    $(`.catalog__sort[data-tab="${$(this).attr('data-tab')}"]`).show();
+    $(`.catalog__sort[data-tab="${$(this).attr('data-tab')}"]`).addClass('active');
+    calculateSort();
+  })
+
+  calculateSort();
+})
+
+function calculateSort() {
+  $('.catalog__sort').each(function () { 
+    if ($(this).hasClass('active')) {
+      const labels = $(this).find('.catalog__sort-btn');
+      const showMoreBtn = $(this).find('.btn--red');
+      const c = $(this);
+      const labelsToShow = calculateLabelsToShow(c);
+    
+      if (labels.length <= labelsToShow) {
+        showMoreBtn.hide();
+      }
+      labels.slice(labelsToShow).hide();
+
+      showMoreBtn.on('click', function () {
+        console.log('fffff',$(this).text(), $(this).text() === 'Показать ещё')
+        if ($(this).text() === 'Показать ещё') {
+          labels.show();
+          $(this).text('Скрыть');
+        } else if($(this).text() === 'Скрыть'){
+          labels.slice(labelsToShow).hide();
+          $(this).text('Показать ещё');
+        }
+      })
+    }
+  })
+}
+function calculateLabelsToShow(container) {
+  const btnWidth = container.find('.btn--red').width();
+  const containerWidth = container.width() - btnWidth;
+  const labelWidth = container.find('.catalog__sort-btn:first').outerWidth();
+  const labelsPerRow = Math.floor(containerWidth / labelWidth);
+  return labelsPerRow;
+}
+
+$('.catalog__list-filter').on('click', function () {
+  $('.catalog__list-filter').removeClass('active');
+  $(this).addClass('active')
+  if($('.catalog__filter-active').length < 2) {
+    $('.button-clear').hide();
+  }
+})
+
+//chexbox
+$(function () {
+  const container = $('.catalog__filters-active');
+  $('.button-clear').hide();
+  $('.catalog__filter:nth-child(n + 8)').hide();
+
+  $('.catalog__filter-more').on('click', function () {
+    $('.catalog__filter:nth-child(n + 8)').slideToggle();
+    $('.catalog__filter-more').text($('.catalog__filter:nth-child(n + 8)').is(':visible') ? "скрыть" : "показать все");
+  })
+  
+  $('.catalog__filter').on('click', function () {
+    const inp = $(this).find('input');
+    const val = $(this).text();
+    const newElem = $(`<div class="catalog__filter-active btn--grey">${val}<div class="icon-close"><img src="./assets/images/icons/cross-small.svg" alt=""></div></div>`)
+    const elem = `<div class="catalog__filter-active btn--grey">${val}<div class="icon-close"><img src="./assets/images/icons/cross-small.svg" alt=""></div></div>`;
+    if (inp.prop('checked')) {
+      newElem.insertBefore($('.button-clear'))
+      // container.html(function (ind, html) {
+      //   return html + elem;
+      // })
+    } else {
+      container.find('.catalog__filter-active:contains("' + val + '")').remove();
+    }
+    if ($('.catalog__filter-active').length >= 2) {
+      $('.button-clear').show();
+    }
+    if($('.catalog__filter-active').length < 2) {
+      $('.button-clear').hide();
+    }
+  })
+
+  $('.catalog__sort-btn').on('click', function () {
+    const inp = $(this).find('input');
+    if (inp.prop('checked')) { 
+      $(this).addClass('active');
+    } else {
+      $(this).removeClass('active');
+    }
+  })
+
+  $('.catalog__filters-active').on('click', '.catalog__filter-active', function () {
+    const value = $(this).text();
+    $('.catalog__filter').each(function () {
+      if ($(this).text() === value) {
+        const input = $(this).find('input');
+        input.prop('checked', false);
+        container.find('.catalog__filter-active:contains("' + value + '")').remove();
+      }
+    });
+    if($('.catalog__filter-active').length < 2) {
+      $('.button-clear').hide();
+    }
+  })
+
+  $('.button-clear').on('click', function () {
+    container.find('.catalog__filter-active').remove();
+    $('.catalog__filter').each(function () { 
+      const input = $(this).find('input');
+      input.prop('checked', false);
+    })
+    $(this).hide()
+  })
+})
+
+//pagination
+
+$('.page-navigation__item').on('click', function () {
+  $('.page-navigation__item').removeClass('active');
+  $(this).addClass('active');
+})
+
+$('.page-navigation__arrow_next').on('click', function () {
+  let active = $('.page-navigation__item.active');
+  $('.page-navigation__item').removeClass('active');
+  let next = active.next('.page-navigation__item');
+  if (next.length > 0) {
+    active.next('.page-navigation__item').addClass('active');
+  } else {
+    active.addClass('active');
+  }
+})
+
+$('.page-navigation__arrow_prev').on('click', function () {
+  let active = $('.page-navigation__item.active');
+  $('.page-navigation__item').removeClass('active');
+  if (active.prev('.page-navigation__item').length > 0) {
+    active.prev('.page-navigation__item').addClass('active');
+  } else {
+    active.addClass('active');
   }
 })
 

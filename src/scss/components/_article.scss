@@ -255,6 +255,42 @@
   }
 }
 
+.article-catalog {
+  margin-bottom: 16rem;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left {
+  }
+  &__title {
+    margin-bottom: 22.2rem;
+  }
+  &__image {
+    width: 50.7rem;
+    height: 48.4rem;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    width: 77.1rem;
+    &-text {
+      width: 71.2rem;
+      margin-bottom: 18.5rem;
+    }
+    &-bottom {
+      display: flex;
+      justify-content: space-between;
+      &-text {
+        width: 36.4rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 48em) {
   .article {
     // .article__header
