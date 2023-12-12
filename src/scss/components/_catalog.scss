@@ -121,6 +121,12 @@
           object-fit: contain;
         }
       }
+      &.active {
+        & .catalog__list-sort-icon {
+          transform: rotate(180deg);
+          transition: transform 0.3s;
+        }
+      }
     }
     &-bottom {
       margin-top: 4rem;
@@ -289,11 +295,6 @@
           width: 2.2rem;
           height: 1.1rem;
         }
-        &.active {
-          & .catalog__list-sort-icon {
-            transform: rotate(180deg);
-          }
-        }
       }
       &-bottom {
         margin-top: 4.8rem;
@@ -450,6 +451,21 @@
         width: 100%;
         text-align: center;
         margin-bottom: 1.6rem;
+      }
+      & .button-clear {
+        padding: 2.4rem 4.4rem;
+        font-family: "Inter";
+        font-size: 2.8rem;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 100px;
+        width: fit-content;
+        background-color: $black;
+        color: $white;
+        & svg {
+          width: 2.8rem;
+          height: 2.8rem;
+        }
       }
     }
   }
