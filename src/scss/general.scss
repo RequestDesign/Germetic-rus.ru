@@ -499,4 +499,38 @@ left: 0;
 
   }
 
+  //checkbox
+  input[type=checkbox]:before {
+    width: 4rem;
+    height: 4rem;
+    border: 0.2rem solid #e33c18;
+  }
+  input[type=checkbox]:checked:after {
+    content: "";
+    width: 1.2rem;
+    height: 2rem;
+    border-width: 0 0.2rem 0.2rem 0;
+    top: 0.7rem;
+    left: 1.4rem;
+  }
+
+  .form__select {
+    padding-bottom: 3.2rem;
+    height: 6.6rem;
+    &.selectize-control::after {
+      top: 0.75rem;
+      width: 2.8rem;
+      height: 1.4rem;
+    }
+  }
+  .option {
+    margin-bottom: 3.2rem;
+  }
+  .selectize-dropdown {
+    max-height: 30rem;
+    height: fit-content;
+    top: 6.6rem !important;
+    padding: 4rem 4rem 0;
+  }
+
 }

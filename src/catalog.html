@@ -124,6 +124,9 @@
         <div class="catalog__content">
           <div class="catalog__filters">
             <div class="catalog__filters-title title-s">Фильтры</div>
+            <div class="catalog__filters-close">
+              <img src="./assets/images/icons/close-icon.svg" alt="">
+            </div>
             <div class="catalog__filters-list-wrap">
               <div class="catalog__filters-list">
                 <div class="catalog__filters-list-title text">Бренд</div>
@@ -257,7 +260,7 @@
           <div class="catalog__list-wrap">
             <div class="catalog__list-top">
               <div class="catalog__filters-active">
-                <div class="button__arr button-clear">
+                <div class="button__arr button-clear" id="clear">
                   Очистить всё
                   <div class="btn-swiper__svg-box">
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
@@ -285,6 +288,9 @@
                     Сначала популярные
                   </label>
                 </div>
+              </div>
+              <div class="catalog__list-filter-icon">
+                <img src="./assets/images/icons/filters.svg" alt="">
               </div>
             </div>
             <div class="catalog__list">
@@ -837,7 +843,6 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
     <section class="article article-catalog">
       <div class="container">
@@ -879,7 +884,7 @@
     <section class="form catalog-form">
       <div class="container">
         <div class="form__inner">
-          <div class="form__content catalog-form">
+          <div class="form__content">
             <div class="form__content-row form__content-row--top">
               <span class="form__content-link-main btn--transparent"> Рустил </span>
               <a href="tel:+74951202329" class="form__content-link-tel button--circle ">
@@ -956,6 +961,163 @@
       </div>
     </section>
   </main>
+  <section class="filters-modal">
+    <div class="filters-modal__content">
+      <div class="catalog__filters">
+        <div class="catalog__filters-title title-s">Фильтры</div>
+        <div class="catalog__filters-close">
+          <img src="./assets/images/icons/close-icon.svg" alt="">
+        </div>
+        <div class="catalog__filters-list-wrap">
+          <div class="catalog__filters-list">
+            <div class="catalog__filters-list-title text">Бренд</div>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="brand">
+              Рустил
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="brand">
+              Гермаст
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="brand">
+              Адвафлекс
+            </label>
+          </div>
+          <div class="catalog__filters-list">
+            <div class="catalog__filters-list-title text">Состав</div>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="compound">
+              Полиуретановые
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="compound">
+              Гибридный полимер
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="compound">
+              Акриловые
+            </label>
+          </div>
+          <div class="catalog__filters-list">
+            <div class="catalog__filters-list-title text">Тип</div>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="type">
+              Однокомпонентный
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="type">
+              Двухкомпонентный
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="type">
+              Клей-герметик
+            </label>
+          </div>
+          <div class="catalog__filters-list">
+            <div class="catalog__filters-list-title text">Назначение</div>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="purpose">
+              Для бетона
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="purpose">
+              Для металла
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="purpose">
+              Для дерева
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="purpose">
+              Для пластика
+            </label>
+          </div>
+          <div class="catalog__filters-list">
+            <div class="catalog__filters-list-title text">Цвет</div>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Цвета RAL
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Белый
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Серый
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Светло-серый
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Темно-серый
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Черный
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Черный
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Черный
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Черный
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="color">
+              Черный
+            </label>
+            <button class="catalog__filter-more btn-link" type="button">показать все</button>
+          </div>
+          <div class="catalog__filters-list">
+            <div class="catalog__filters-list-title text">Упаковка</div>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="size">
+              600 мл
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="size">
+              12,5 кг
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="size">
+              15 кг
+            </label>
+            <label class="catalog__filter text-sm">
+              <input type="checkbox" name="size">
+              16,5 кг
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="filters-modal__bottom">
+        <div class="catalog__filters-active">
+          <div class="button__arr button-clear" id="clear">
+            Очистить всё
+            <div class="btn-swiper__svg-box">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                <path d="M2 2.5L7 7.5M12 12.5L7 7.5M7 7.5L12 2.5M7 7.5L2 12.5" stroke="white"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <a class="catalog__btn button btn-more-arr" href="#0">
+          Показать 124 товара
+        </a>
+        <button class="catalog__btn btn--transparent" href="#0" id="clear">
+          Очистить
+        </button>
+      </div>
+    </div>
+  </section>
   <include src="./components/modal-success.html"></include>
   <include src="./components/footer.html"></include>
 </body>

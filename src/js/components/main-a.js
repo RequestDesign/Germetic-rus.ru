@@ -1,6 +1,7 @@
 'use strict';
 import Swiper from 'swiper/bundle';
 import selectize from '@selectize/selectize';
+
 var $ = require('jquery');
 const rem = function (rem) {
   if (window.innerWidth > 768) {
@@ -93,6 +94,23 @@ $(function () {
     $('.catalog__dropdown').hide()
     $('.catalog__list-sort span').on('click', function () {
       $('.catalog__dropdown').slideToggle();
+      $('.catalog__list-sort').toggleClass('active');
+    })
+  }
+})
+
+
+$(function () {
+  if ($(window).width() < 769) {
+    $('.filters-modal').hide();
+    $('.catalog__list-filter-icon').on('click', function() {
+      $('.filters-modal').show();
+      openModal();
+    })
+
+    $('.catalog__filters-close').on('click', function () {
+      $('.filters-modal').hide();
+      closeModal();
     })
   }
 })
@@ -121,26 +139,31 @@ $(function () {
 function calculateSort() {
   $('.catalog__sort').each(function () { 
     if ($(this).hasClass('active')) {
-      const labels = $(this).find('.catalog__sort-btn');
-      const showMoreBtn = $(this).find('.btn--red');
-      const c = $(this);
-      const labelsToShow = calculateLabelsToShow(c);
-    
-      if (labels.length <= labelsToShow) {
-        showMoreBtn.hide();
-      }
-      labels.slice(labelsToShow).hide();
-
-      showMoreBtn.on('click', function () {
-        console.log('fffff',$(this).text(), $(this).text() === 'Показать ещё')
-        if ($(this).text() === 'Показать ещё') {
-          labels.show();
-          $(this).text('Скрыть');
-        } else if($(this).text() === 'Скрыть'){
-          labels.slice(labelsToShow).hide();
-          $(this).text('Показать ещё');
+      if ($(window).width() > 768) {
+        const labels = $(this).find('.catalog__sort-btn');
+        const showMoreBtn = $(this).find('.btn--red');
+        const c = $(this);
+        const labelsToShow = calculateLabelsToShow(c);
+      
+        if (labels.length <= labelsToShow) {
+          showMoreBtn.hide();
         }
-      })
+        labels.slice(labelsToShow).hide();
+
+        showMoreBtn.on('click', function () {
+          console.log('fffff',$(this).text(), $(this).text() === 'Показать ещё')
+          if ($(this).text() === 'Показать ещё') {
+            labels.show();
+            $(this).text('Скрыть');
+          } else if($(this).text() === 'Скрыть'){
+            labels.slice(labelsToShow).hide();
+            $(this).text('Показать ещё');
+          }
+        })
+      }
+      if ($(window).width() < 769) {
+        $(this).find('.btn--red').hide();
+      }
     }
   })
 }
@@ -215,13 +238,13 @@ $(function () {
     }
   })
 
-  $('.button-clear').on('click', function () {
-    container.find('.catalog__filter-active').remove();
+  $('#clear').on('click', function () {
+    $('.catalog__filters-active').find('.catalog__filter-active').remove();
     $('.catalog__filter').each(function () { 
       const input = $(this).find('input');
       input.prop('checked', false);
     })
-    $(this).hide()
+    $('.button-clear').hide();
   })
 })
 

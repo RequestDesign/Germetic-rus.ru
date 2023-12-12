@@ -479,4 +479,44 @@
       display: none;
     }
   }
+
+  .article-catalog {
+    margin-bottom: 2rem;
+    &__wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &__left {
+    }
+    &__title {
+      margin-bottom: 4.8rem;
+    }
+    &__image {
+      position: absolute;
+      bottom: 13rem;
+      width: 28rem;
+      height: 28rem;
+    }
+    &__content {
+      width: 100%;
+      &-text {
+        width: 100%;
+        margin-bottom: 2.4rem;
+      }
+      &-bottom {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: space-between;
+        flex-direction: column;
+        &-text {
+          width: 100%;
+          &:first-child {
+            padding-left: 30rem;
+          }
+        }
+      }
+    }
+  }
 }
