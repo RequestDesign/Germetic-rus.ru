@@ -428,6 +428,10 @@ left: 0;
   filter: grayscale(1);
 }
 
+.hidden{
+  display: none;
+}
+
 @media (max-width: 48em) {
   .title {
     font-size: 5.2rem;
