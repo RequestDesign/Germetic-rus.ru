@@ -114,7 +114,7 @@
           row-gap: 2rem;
           column-gap: 1.6rem;
           background-color: $white;
-          width: 15.2rem;
+          width: 15.3rem;
           padding: 3.2rem;
           border: 0.1rem solid $grey;
         }
@@ -388,7 +388,7 @@
           padding: 4.6rem;
           border: 0.2rem solid #bdbdbd;
         }
-        &.active {
+        & input[type=radio]:checked {
           padding: 0.4rem;
           border: 0.4rem solid #4989EA;
         }
@@ -397,6 +397,10 @@
             width: 2.2rem;
             height: 1.1rem;
           }
+        }
+        &.active {
+          padding: 0.35rem;
+          border: 0.4rem solid #4989EA;
         }
       }
       &-size {
