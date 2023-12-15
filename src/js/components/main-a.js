@@ -537,7 +537,7 @@ $('.form__file').find('input').on('change', function (event) {
   const fileInput = event.target;
   if (fileInput.files.length > 0) {
     const file = fileInput.files[0];
-    const fileName = file.name.length > 20 ? file.name.substring(0, 20) + '...' : file.name;
+    const fileName = file.name.length > 15 ? file.name.substring(0, 15) + '...' : file.name;
     const fileSize = (file.size / 1024).toFixed(2) + ' kb';
 
     $('.form__file').removeClass('button');
@@ -559,7 +559,6 @@ $('.form__file').on('click', '.icon-close', function (e) {
   $('.form__file').removeClass('btn--transparent');
   $('.form__file span.name').text('Прикрепить реквизиты');
   $('.form__button-svg-box.button__arr-svg-box').show();
-  
 })
 
 document.addEventListener("click", (el) => {
