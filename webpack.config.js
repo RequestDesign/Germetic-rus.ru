@@ -22,6 +22,8 @@ const entryPoints = {
   card_product: path.resolve(__dirname, "src", "index.js"),
   contacts: path.resolve(__dirname, "src", "index.js"),
   "prices-poliuretanovie": path.resolve(__dirname, "src", "index.js"),
+  catalog: path.resolve(__dirname, "src", "index.js"),
+  '404': path.resolve(__dirname, "src", "index.js"),
 };
 
 // Создаем экземпляры HtmlWebpackPlugin для каждой страницы
